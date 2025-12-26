@@ -1,0 +1,194 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Clerra Documentation",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.png",
+  "colors": {
+    "primary": "#375DFB",
+    "light": "#6B8AFF",
+    "dark": "#1E3A8A",
+    "background": {
+      "dark": "#0A0D14"
+    },
+    "anchors": {
+      "from": "#375DFB",
+      "to": "#6B8AFF"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Support",
+      "url": "mailto:support@clerra.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://clerra.com/signup"
+  },
+  "tabs": [
+    {
+      "name": "API Reference",
+      "url": "api-reference"
+    },
+    {
+      "name": "Guides",
+      "url": "guides"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Community",
+      "icon": "discord",
+      "url": "https://discord.gg/clerra"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://clerra.com/blog"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "introduction",
+        "quickstart",
+        "authentication",
+        "system-requirements"
+      ]
+    },
+    {
+      "group": "User Management",
+      "pages": [
+        "users/roles-and-permissions",
+        "users/inviting-team-members",
+        "users/departments"
+      ]
+    },
+    {
+      "group": "Case Management",
+      "pages": [
+        "cases/creating-cases",
+        "cases/case-workflow",
+        "cases/timelines",
+        "cases/checklists",
+        "cases/case-sharing",
+        "cases/case-intake"
+      ]
+    },
+    {
+      "group": "Document Management",
+      "pages": [
+        "documents/uploading-documents",
+        "documents/organization",
+        "documents/vault-system",
+        "documents/versioning",
+        "documents/search",
+        "documents/security"
+      ]
+    },
+    {
+      "group": "Time Tracking & Billing",
+      "pages": [
+        "billing/time-tracking",
+        "billing/creating-invoices",
+        "billing/approval-workflow",
+        "billing/payment-tracking",
+        "billing/billing-reports"
+      ]
+    },
+    {
+      "group": "AI Features",
+      "pages": [
+        "ai/chat-assistant",
+        "ai/document-analysis",
+        "ai/case-insights",
+        "ai/playbook-guidance",
+        "ai/usage-analytics"
+      ]
+    },
+    {
+      "group": "Collaboration",
+      "pages": [
+        "collaboration/notifications",
+        "collaboration/comments",
+        "collaboration/real-time-features",
+        "collaboration/events-calendar"
+      ]
+    },
+    {
+      "group": "Playbooks & Automation",
+      "pages": [
+        "playbooks/overview",
+        "playbooks/using-playbooks",
+        "playbooks/creating-playbooks",
+        "playbooks/versioning"
+      ]
+    },
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/overview",
+        "integrations/zoom",
+        "integrations/lexisnexis",
+        "integrations/payment-gateways",
+        "integrations/api-access"
+      ]
+    },
+    {
+      "group": "Workspace Management",
+      "pages": [
+        "workspace/creating-workspace",
+        "workspace/settings",
+        "workspace/analytics"
+      ]
+    },
+    {
+      "group": "Subscription & Billing",
+      "pages": [
+        "subscription/plans",
+        "subscription/managing-subscription",
+        "subscription/usage-limits"
+      ]
+    },
+    {
+      "group": "Security & Compliance",
+      "pages": [
+        "security/data-security",
+        "security/access-control",
+        "security/audit-logging",
+        "security/compliance",
+        "security/backup-recovery"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "support/faq",
+        "support/troubleshooting",
+        "support/contact"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/ClerraApp",
+    "linkedin": "https://www.linkedin.com/company/clerra",
+    "github": "https://github.com/clerra"
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "search": {
+    "prompt": "Search documentation..."
+  },
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-XXXXXXXXXX"
+    }
+  }
+}

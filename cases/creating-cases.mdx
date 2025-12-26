@@ -1,0 +1,266 @@
+---
+title: 'Creating Cases'
+description: 'Learn how to create and manage legal cases in Clerra'
+icon: 'briefcase'
+---
+
+## Overview
+
+Cases are the core of your legal practice management in Clerra. This guide will walk you through creating, organizing, and managing cases effectively.
+
+## Creating a New Case
+
+<Steps>
+  <Step title="Navigate to Cases">
+    Click **Cases** in the main navigation menu, then click the **New Case** button.
+  </Step>
+
+  <Step title="Fill in Basic Information">
+    Enter the essential case details:
+
+    <ParamField path="title" type="string" required>
+      Descriptive name for the case (e.g., "Smith v. Johnson Contract Dispute")
+    </ParamField>
+
+    <ParamField path="case_number" type="string">
+      Your internal reference number or court case number
+    </ParamField>
+
+    <ParamField path="case_type" type="select" required>
+      Select from predefined types:
+      - Civil Litigation
+      - Criminal Defense
+      - Corporate Law
+      - Family Law
+      - Real Estate
+      - Intellectual Property
+      - Employment Law
+      - And more...
+    </ParamField>
+
+    <ParamField path="case_subtype" type="select">
+      More specific categorization based on the selected case type
+    </ParamField>
+  </Step>
+
+  <Step title="Add Client Information">
+    <Tabs>
+      <Tab title="Existing Client">
+        Select a client from your existing client list
+      </Tab>
+      <Tab title="New Client">
+        Click **Add New Client** and enter:
+        - Client name
+        - Contact information
+        - Business/individual type
+      </Tab>
+    </Tabs>
+  </Step>
+
+  <Step title="Assign to Department">
+    If your workspace uses departments, assign the case to the appropriate legal department.
+
+    <Info>
+      Department assignment helps organize cases and control access for department-specific teams.
+    </Info>
+  </Step>
+
+  <Step title="Add Additional Details">
+    <AccordionGroup>
+      <Accordion title="Description">
+        Provide an overview of the case, including key facts and circumstances.
+
+        <Warning>
+          Sensitive descriptions are automatically encrypted for security.
+        </Warning>
+      </Accordion>
+
+      <Accordion title="Preferred Outcome">
+        Document the desired resolution or outcome for the case.
+      </Accordion>
+
+      <Accordion title="Other Parties">
+        Add opposing parties, defendants, or other stakeholders involved in the case.
+      </Accordion>
+
+      <Accordion title="Representing">
+        Specify who your firm is representing (plaintiff, defendant, etc.).
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+
+  <Step title="Assign Team Members">
+    Add attorneys, paralegals, and other team members to the case:
+
+    - **Originating Attorney**: The attorney who brought in the case
+    - **Assigned Attorneys**: Primary attorneys working on the case
+    - **Team Members**: Paralegals, associates, and support staff
+
+    <Tip>
+      Team members will receive notifications and can access case documents based on their permissions.
+    </Tip>
+  </Step>
+
+  <Step title="Create Case">
+    Review all information and click **Create Case** to finalize.
+  </Step>
+</Steps>
+
+## Case Information Fields
+
+### Required Fields
+
+| Field | Description | Example |
+|-------|-------------|---------|
+| Case Title | Descriptive name | "Acme Corp v. Beta LLC - Breach of Contract" |
+| Case Type | Primary category | Civil Litigation |
+| Client | Client name | Acme Corporation |
+
+### Optional But Recommended
+
+| Field | Description | Purpose |
+|-------|-------------|---------|
+| Case Number | Reference ID | Track internal/court numbers |
+| Subtype | Specific category | Better organization and reporting |
+| Description | Case overview | Quick reference for team |
+| Department | Assigned dept | Department-level access control |
+| Preferred Outcome | Desired result | Align team on goals |
+
+## Case Status Options
+
+When creating or updating a case, you can set the status:
+
+<AccordionGroup>
+  <Accordion title="Open" icon="folder-open">
+    Active case in progress - default status for new cases
+  </Accordion>
+
+  <Accordion title="In Progress" icon="spinner">
+    Work is actively being performed on the case
+  </Accordion>
+
+  <Accordion title="On Hold" icon="pause">
+    Temporarily paused due to external factors
+  </Accordion>
+
+  <Accordion title="Closed - Won" icon="trophy">
+    Successfully resolved in client's favor
+  </Accordion>
+
+  <Accordion title="Closed - Lost" icon="xmark">
+    Unfavorable outcome
+  </Accordion>
+
+  <Accordion title="Closed - Settled" icon="handshake">
+    Resolved through settlement agreement
+  </Accordion>
+
+  <Accordion title="Archived" icon="box-archive">
+    Historical record keeping
+  </Accordion>
+</AccordionGroup>
+
+## After Creating a Case
+
+Once your case is created, you can:
+
+<CardGroup cols={2}>
+  <Card title="Add Documents" icon="file" href="/documents/uploading-documents">
+    Upload case-related files and pleadings
+  </Card>
+  <Card title="Create Timeline" icon="timeline" href="/cases/timelines">
+    Set up case milestones and deadlines
+  </Card>
+  <Card title="Add Checklist" icon="list-check" href="/cases/checklists">
+    Create task lists from templates
+  </Card>
+  <Card title="Track Time" icon="clock" href="/billing/time-tracking">
+    Start logging billable hours
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<Check>
+  **Use descriptive case titles** - Include parties and case type for easy identification
+</Check>
+
+<Check>
+  **Assign team members early** - Ensures everyone has access when they need it
+</Check>
+
+<Check>
+  **Add comprehensive descriptions** - Helps new team members get up to speed quickly
+</Check>
+
+<Check>
+  **Set up checklists immediately** - Ensures no critical steps are missed
+</Check>
+
+<Check>
+  **Link related documents** - Keep all case files organized in one place
+</Check>
+
+## Common Use Cases
+
+<Tabs>
+  <Tab title="Litigation Cases">
+    1. Create case with court case number
+    2. Add plaintiff and defendant information
+    3. Set up discovery timeline
+    4. Create litigation checklist from template
+    5. Assign to litigation department
+  </Tab>
+
+  <Tab title="Transactional Matters">
+    1. Create case for the transaction
+    2. Add all parties to the transaction
+    3. Upload relevant contracts and agreements
+    4. Set up closing checklist
+    5. Track billable hours for the matter
+  </Tab>
+
+  <Tab title="Advisory Work">
+    1. Create advisory case
+    2. Link to related previous matters
+    3. Upload research and memos
+    4. Set up knowledge base documents
+    5. Track time for billing
+  </Tab>
+</Tabs>
+
+## Quick Tips
+
+<Tip>
+  **Bulk Import**: Need to create multiple cases? Contact support about our bulk import feature.
+</Tip>
+
+<Tip>
+  **Templates**: Save time by creating case templates for recurring matter types.
+</Tip>
+
+<Warning>
+  **Permissions**: Ensure team members have appropriate access levels before sharing sensitive case information.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Case Workflow" icon="diagram-project" href="/cases/case-workflow">
+    Manage case progression
+  </Card>
+  <Card title="Case Sharing" icon="share-nodes" href="/cases/case-sharing">
+    Share with team members
+  </Card>
+  <Card title="Case Insights" icon="lightbulb" href="/ai/case-insights">
+    Get AI-powered insights
+  </Card>
+</CardGroup>
+
+## Need Help?
+
+If you encounter issues creating cases:
+
+- Check the [FAQ section](/support/faq)
+- Contact [support@clerra.com](mailto:support@clerra.com)
+- Use the in-app chat for immediate assistance

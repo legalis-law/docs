@@ -1,80 +1,204 @@
 ---
-title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+title: 'Quick Start Guide'
+description: 'Get started with Clerra in under 5 minutes'
+icon: 'rocket'
 ---
 
-## Get started in three steps
+## Welcome! Let's Get You Started
 
-Get your documentation site running locally and make your first customization.
+Follow this guide to set up your Clerra workspace and start managing your legal practice efficiently.
 
-### Step 1: Set up your local environment
+<Steps>
+  <Step title="Access Clerra">
+    Navigate to your workspace URL (e.g., `https://app.clerra.app`)
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+    **System Requirements:**
+    - Modern web browser (Chrome, Firefox, Safari, or Edge)
+    - Stable internet connection (5+ Mbps recommended)
+    - No software installation required
+  </Step>
 
-### Step 2: Deploy your changes
+  <Step title="Sign In">
+    Enter your email and password, then complete two-factor authentication if enabled.
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+    <Tip>
+      First time logging in? Check your email for the welcome message with your temporary password.
+    </Tip>
+  </Step>
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+  <Step title="Complete Your Profile">
+    <AccordionGroup>
+      <Accordion title="Add Your Information">
+        - Full name and contact details
+        - Profile photo (optional but recommended)
+        - Timezone preferences
+        - Notification settings
+      </Accordion>
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+      <Accordion title="Enable Security Features">
+        Go to **Settings > Security** and enable:
+        - Two-factor authentication (2FA)
+        - Passkey authentication (for passwordless login)
+      </Accordion>
+    </AccordionGroup>
+  </Step>
 
-### Step 3: Go live
+  <Step title="Set Up Your Workspace">
+    <Tabs>
+      <Tab title="Join Existing Workspace">
+        If you received an invitation:
+        1. Check your email for the invitation link
+        2. Click **Accept Invitation**
+        3. You'll be added to the workspace automatically
+      </Tab>
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+      <Tab title="Create New Workspace">
+        To create a new workspace:
+        1. Click **Create Workspace** from the workspace switcher
+        2. Enter workspace details (name, practice areas)
+        3. Choose your subscription plan
+        4. Configure initial settings
+      </Tab>
+    </Tabs>
+  </Step>
 
-## Next steps
+  <Step title="Explore the Dashboard">
+    Familiarize yourself with the main interface:
 
-Now that you have your docs running, explore these key features:
+    <CardGroup cols={2}>
+      <Card title="Navigation Menu" icon="bars">
+        Access Cases, Documents, Time Tracking, and more
+      </Card>
+      <Card title="Dashboard" icon="home">
+        View your assigned cases and recent activity
+      </Card>
+      <Card title="Notifications" icon="bell">
+        Stay updated with real-time alerts
+      </Card>
+      <Card title="AI Assistant" icon="robot">
+        Click the AI icon for intelligent help
+      </Card>
+    </CardGroup>
+  </Step>
+</Steps>
+
+## What to Do Next
 
 <CardGroup cols={2}>
-
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Invite Team Members" icon="user-plus" href="/users/inviting-team-members">
+    Add your colleagues and assign roles
+  </Card>
+  <Card title="Create Your First Case" icon="briefcase" href="/cases/creating-cases">
+    Start managing a legal case
+  </Card>
+  <Card title="Upload Documents" icon="file-upload" href="/documents/uploading-documents">
+    Add files to your workspace
+  </Card>
+  <Card title="Track Time" icon="clock" href="/billing/time-tracking">
+    Log billable hours
+  </Card>
 </CardGroup>
 
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
+## Common First Steps
+
+### For Administrators
+
+<Steps>
+  <Step title="Configure Workspace Settings">
+    Set up billing rates, tax settings, and workspace preferences
+  </Step>
+  <Step title="Invite Team Members">
+    Add users and assign appropriate roles
+  </Step>
+  <Step title="Set Up Departments">
+    Organize your team by practice areas or departments
+  </Step>
+  <Step title="Configure Integrations">
+    Connect Zoom, payment gateways, and other tools
+  </Step>
+</Steps>
+
+### For Attorneys
+
+<Steps>
+  <Step title="Create a Case">
+    Set up your first case with client information
+  </Step>
+  <Step title="Upload Documents">
+    Add case-related documents and organize them
+  </Step>
+  <Step title="Start Tracking Time">
+    Log your billable hours as you work
+  </Step>
+  <Step title="Try AI Assistant">
+    Ask legal questions and get document analysis
+  </Step>
+</Steps>
+
+### For Paralegals & Staff
+
+<Steps>
+  <Step title="Review Assigned Cases">
+    Check cases you've been assigned to
+  </Step>
+  <Step title="Complete Tasks">
+    Work through your assigned checklist items
+  </Step>
+  <Step title="Organize Documents">
+    File and categorize case documents
+  </Step>
+  <Step title="Add Comments">
+    Collaborate with team members on cases
+  </Step>
+</Steps>
+
+## Quick Tips
+
+<Tip>
+  **Keyboard Shortcuts**: Press `Cmd/Ctrl + K` to open the quick search
+</Tip>
+
+<Tip>
+  **Mobile Access**: Clerra works great on mobile browsers - no app needed!
+</Tip>
+
+<Warning>
+  **Important**: Always enable two-factor authentication for security
+</Warning>
+
+<Info>
+  **Pro Tip**: Use the AI Assistant (top-right corner) to ask questions as you explore
+</Info>
+
+## Need Help?
+
+If you encounter any issues during setup:
+
+<CardGroup cols={2}>
+  <Card title="Live Chat" icon="message">
+    Click the chat icon in the bottom-right corner
+  </Card>
+  <Card title="Email Support" icon="envelope">
+    Send us a message at [support@clerra.com](mailto:support@clerra.com)
+  </Card>
+  <Card title="Knowledge Base" icon="book">
+    Browse our [troubleshooting guides](/support/troubleshooting)
+  </Card>
+  <Card title="Video Tutorials" icon="video">
+    Watch step-by-step video guides
+  </Card>
+</CardGroup>
+
+## Ready to Dive Deeper?
+
+<CardGroup cols={3}>
+  <Card title="User Roles" icon="shield" href="/users/roles-and-permissions">
+    Learn about permissions
+  </Card>
+  <Card title="Case Workflow" icon="diagram-project" href="/cases/case-workflow">
+    Master case management
+  </Card>
+  <Card title="AI Features" icon="brain" href="/ai/chat-assistant">
+    Explore AI capabilities
+  </Card>
+</CardGroup>
