@@ -73,14 +73,13 @@
       "pages": [
         "cases/creating-cases",
         "cases/case-workflow",
-        "cases/timelines",
         "cases/checklists",
         "cases/case-sharing",
-        "cases/case-intake"
+        "cases/client-intake"
       ]
     },
     {
-      "group": "Document Management",
+      "group": "Vault Management",
       "pages": [
         "documents/uploading-documents",
         "documents/organization",
@@ -134,7 +133,6 @@
         "integrations/overview",
         "integrations/zoom",
         "integrations/lexisnexis",
-        "integrations/payment-gateways",
         "integrations/api-access"
       ]
     },
@@ -142,26 +140,7 @@
       "group": "Workspace Management",
       "pages": [
         "workspace/creating-workspace",
-        "workspace/settings",
-        "workspace/analytics"
-      ]
-    },
-    {
-      "group": "Subscription & Billing",
-      "pages": [
-        "subscription/plans",
-        "subscription/managing-subscription",
-        "subscription/usage-limits"
-      ]
-    },
-    {
-      "group": "Security & Compliance",
-      "pages": [
-        "security/data-security",
-        "security/access-control",
-        "security/audit-logging",
-        "security/compliance",
-        "security/backup-recovery"
+        "workspace/settings"
       ]
     },
     {
