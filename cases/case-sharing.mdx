@@ -1,0 +1,386 @@
+---
+title: 'Case Sharing'
+description: 'Share cases across departments and with external parties'
+icon: 'share-nodes'
+---
+
+## Overview
+
+Share cases and matters across departments, with specific team members, or with external clients to enable collaboration while maintaining security and access control.
+
+<Info>
+  By default, cases are visible only to members of the department they're assigned to. Sharing allows controlled access beyond department boundaries.
+</Info>
+
+## Types of Case Sharing
+
+<CardGroup cols={3}>
+  <Card title="Cross-Department" icon="sitemap">
+    Share with other departments in your workspace
+  </Card>
+  <Card title="Team Member" icon="user-plus">
+    Grant access to specific individuals
+  </Card>
+  <Card title="Client Access" icon="user-tie">
+    Allow clients to view their case information
+  </Card>
+</CardGroup>
+
+## Sharing Across Departments
+
+When a case involves multiple practice areas or office locations:
+
+<Steps>
+  <Step title="Open Case">
+    Navigate to the case you want to share
+  </Step>
+
+  <Step title="Access Sharing Settings">
+    Click **Share** or **Manage Access** button
+  </Step>
+
+  <Step title="Select Department">
+    Choose the department(s) to share with
+  </Step>
+
+  <Step title="Set Permissions">
+    Configure access level:
+    - **View Only**: Can see case details but not edit
+    - **Collaborate**: Can add comments, documents, time entries
+    - **Full Access**: Can edit case details and manage
+  </Step>
+
+  <Step title="Save & Notify">
+    Save changes - shared department members receive notification
+  </Step>
+</Steps>
+
+**Use Cases:**
+- Litigation department shares with Corporate for contract review
+- Real Estate department collaborates with Tax department
+- Multiple office locations working on same matter
+
+## Sharing with Individual Team Members
+
+Grant access to specific users outside the case's department:
+
+<Steps>
+  <Step title="Open Sharing Settings">
+    Click **Share** on the case
+  </Step>
+
+  <Step title="Add User">
+    Click **Add Team Member**
+  </Step>
+
+  <Step title="Search & Select">
+    Search for user by name or email
+  </Step>
+
+  <Step title="Assign Role">
+    Select their role on the case:
+    - Attorney
+    - Paralegal
+    - Consultant
+    - Observer (view-only)
+  </Step>
+
+  <Step title="Set Billing Rate">
+    If billable, set their rate for this case
+  </Step>
+
+  <Step title="Notify">
+    User receives invitation to join case
+  </Step>
+</Steps>
+
+<Tip>
+  Adding a user to a case team automatically grants them appropriate access based on their workspace role and assigned case role.
+</Tip>
+
+## Client Portal Access
+
+Allow clients to view their case progress:
+
+### Enabling Client Access
+
+<Steps>
+  <Step title="Navigate to Case">
+    Open the case details
+  </Step>
+
+  <Step title="Client Settings">
+    Click **Client Access** or **Portal Settings**
+  </Step>
+
+  <Step title="Enable Portal">
+    Toggle **Allow Client Access**
+  </Step>
+
+  <Step title="Configure Visibility">
+    Choose what clients can see:
+    - ✓ Case overview and status
+    - ✓ Shared documents
+    - ✓ Upcoming events/deadlines
+    - ✓ Billing and invoices
+    - ✓ Communication history
+    - ✗ Internal notes
+    - ✗ Strategy documents
+    - ✗ Privileged communications
+  </Step>
+
+  <Step title="Invite Client">
+    Client receives email with portal access link
+  </Step>
+</Steps>
+
+<Warning>
+  Clients have view-only access and cannot see internal work product, strategy documents, or privileged attorney communications.
+</Warning>
+
+### What Clients Can Do
+
+**View:**
+- Case status and progress
+- Important dates and milestones
+- Shared documents (e.g., pleadings, contracts)
+- Billing statements and invoices
+- Messages from their legal team
+
+**Submit:**
+- Messages and questions
+- Documents and evidence
+- Intake form responses
+- Payment for invoices
+
+**Cannot:**
+- Edit case details
+- View internal notes
+- See time entries (unless billing is enabled)
+- Access privileged work product
+
+## Access Control Levels
+
+### Permission Levels
+
+<AccordionGroup>
+  <Accordion title="View Only" icon="eye">
+    **Can:**
+    - View case details and status
+    - Read documents and comments
+    - See team members and assignments
+
+    **Cannot:**
+    - Edit anything
+    - Add documents or comments
+    - Change case status
+  </Accordion>
+
+  <Accordion title="Collaborate" icon="users">
+    **Can:**
+    - Everything in View Only
+    - Add comments and notes
+    - Upload documents
+    - Create time entries
+    - Update task status
+
+    **Cannot:**
+    - Edit case details
+    - Change billing settings
+    - Remove team members
+    - Close the case
+  </Accordion>
+
+  <Accordion title="Manage" icon="user-gear">
+    **Can:**
+    - Everything in Collaborate
+    - Edit case details
+    - Add/remove team members (same or lower level)
+    - Change case status
+    - Approve time entries
+
+    **Cannot:**
+    - Setup billing (unless case manager)
+    - Delete the case
+    - Change case manager
+  </Accordion>
+
+  <Accordion title="Full Access (Case Manager)" icon="crown">
+    **Can:**
+    - Everything in Manage
+    - Setup and manage billing
+    - Change case manager
+    - Close and archive case
+    - Full administrative control
+
+    **Special Privileges:**
+    - Only case manager has `setup_case_billing` permission
+  </Accordion>
+</AccordionGroup>
+
+## Managing Shared Access
+
+### Viewing Who Has Access
+
+<Steps>
+  <Step title="Open Case">
+    Navigate to case details
+  </Step>
+
+  <Step title="View Team">
+    Click **Team** tab to see all members
+  </Step>
+
+  <Step title="Check Permissions">
+    Each member shows:
+    - Name and role
+    - Department
+    - Access level
+    - Date added to case
+  </Step>
+</Steps>
+
+### Modifying Access
+
+**To Change Permission Level:**
+1. Click on team member
+2. Select new access level
+3. Save changes
+
+**To Remove Access:**
+1. Click on team member
+2. Select **Remove from Case**
+3. Confirm removal
+4. User loses access immediately
+
+<Note>
+  Removing a user from a case doesn't delete their time entries or comments - it only removes future access.
+</Note>
+
+## Sharing Best Practices
+
+<Check>
+  **Principle of Least Privilege**: Grant only the access level needed
+</Check>
+
+<Check>
+  **Regular Audits**: Review case access quarterly
+</Check>
+
+<Check>
+  **Document Sharing Reasons**: Add notes explaining why cross-department access was granted
+</Check>
+
+<Check>
+  **Remove When Complete**: Remove access when collaboration is finished
+</Check>
+
+<Check>
+  **Use Groups for Common Patterns**: If same team always collaborates, consider department restructuring
+</Check>
+
+<Check>
+  **Client Access Carefully**: Only share appropriate documents with clients
+</Check>
+
+## Notification Settings
+
+Control notifications for shared cases:
+
+**Default Behavior:**
+- Team members notified when added to case
+- Updates trigger notifications based on user preferences
+- Clients receive notifications for major updates only
+
+**Customize Notifications:**
+1. Go to case settings
+2. Configure notification rules
+3. Set who gets notified for what events
+4. Save preferences
+
+## Security & Compliance
+
+### Data Access Logging
+
+All case access is logged:
+- Who accessed the case
+- When they accessed it
+- What they viewed or changed
+- Access level at time of access
+
+<Info>
+  Audit logs are retained for compliance and available to Super-Admins and case managers.
+</Info>
+
+### Revoking Access
+
+Immediately revoke access when needed:
+
+**Emergency Revocation:**
+1. Navigate to case
+2. Go to Team settings
+3. Click **Remove** next to user
+4. Access terminates immediately
+
+**Scenarios Requiring Revocation:**
+- User leaves firm
+- Conflict of interest identified
+- Project role changes
+- Security concern
+
+## Cross-Workspace Sharing
+
+<Warning>
+  **Not Supported**: Cases cannot be shared across different workspaces. Each workspace maintains complete data isolation for security and compliance.
+</Warning>
+
+**Alternatives:**
+- Export case summary as PDF
+- Share specific documents via secure link
+- Create duplicate case in other workspace (if appropriate)
+- Use third-party collaboration tools for specific documents
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="User can't see shared case">
+    - Verify sharing settings are saved
+    - Check user's department and role permissions
+    - Ensure user has accepted case invitation
+    - Confirm no conflicting restrictions
+  </Accordion>
+
+  <Accordion title="Client portal not working">
+    - Verify client has accepted invitation
+    - Check spam folder for portal invite email
+    - Ensure portal access is enabled for the case
+    - Confirm client user account is active
+  </Accordion>
+
+  <Accordion title="Cannot share with specific department">
+    - Verify you have permission to share cases
+    - Check if target department exists
+    - Ensure no workspace restrictions prevent sharing
+  </Accordion>
+
+  <Accordion title="Shared user has wrong permissions">
+    - Review their access level in case team settings
+    - Check their workspace role permissions
+    - Verify department-level access rules
+    - Update access level if needed
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Case Workflow" icon="diagram-project" href="/cases/case-workflow">
+    Understand overall case management
+  </Card>
+  <Card title="Departments" icon="sitemap" href="/users/departments">
+    Learn about department organization
+  </Card>
+  <Card title="Client Intake" icon="user-plus" href="/cases/client-intake">
+    Manage client onboarding
+  </Card>
+</CardGroup>

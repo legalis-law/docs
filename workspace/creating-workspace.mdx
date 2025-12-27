@@ -1,0 +1,363 @@
+---
+title: 'Creating a Workspace'
+description: 'Set up your Clerra workspace for your law firm'
+icon: 'plus-circle'
+---
+
+## Overview
+
+Create a workspace to start using Clerra for your law firm. Each workspace represents a separate legal practice with its own users, cases, documents, and billing.
+
+<Info>
+  Workspaces are created during the onboarding process after signing up for Clerra. The workspace creator becomes the first Super-Admin.
+</Info>
+
+## Workspace Creation Process
+
+The workspace creation happens as part of the signup flow:
+
+<Steps>
+  <Step title="Sign Up">
+    Navigate to https://app.clerra.app and enter your email to begin
+  </Step>
+
+  <Step title="Create Account">
+    Set up your user account with password
+  </Step>
+
+  <Step title="Create Workspace">
+    Fill in workspace details (see form fields below)
+  </Step>
+
+  <Step title="Select Plan">
+    Choose your subscription plan
+  </Step>
+
+  <Step title="Complete Setup">
+    Workspace is created and you're logged in as Super-Admin
+  </Step>
+</Steps>
+
+## Workspace Creation Form
+
+### Required Information
+
+**Workspace Name** (Required)
+- Your firm's name or practice name
+- Must be unique across all Clerra workspaces
+- Examples: "Mensah & Partners", "Accra Legal Associates"
+
+**Super Admin Name** (Required)
+- Your full name as the workspace administrator
+- This becomes your display name in Clerra
+
+**Subscription Plan** (Required)
+- Pro, Teams, or Enterprise plan
+- Free plans are not available
+- Choose based on your firm size and needs
+
+### Optional Information
+
+**Practice Areas**
+- Select the areas of law your firm practices
+- Multiple selections allowed
+- Helps configure relevant templates and playbooks
+- Examples: Corporate Law, Litigation, Real Estate, Family Law
+
+**Enable Case Billing**
+- Toggle to enable/disable billing features
+- Can be changed later in workspace settings
+- Recommended for firms tracking billable hours
+
+**Profile Image**
+- Upload your profile photo
+- Supported formats: JPEG, PNG, JPG
+- Maximum size: 2MB
+- Can be updated later in profile settings
+
+**Team Members**
+- Optionally invite team members during setup
+- Enter email addresses of users to invite
+- They'll receive invitation emails after workspace is created
+
+### Subscription Plan Selection
+
+During workspace creation, you select a subscription plan:
+
+<CardGroup cols={2}>
+  <Card title="Pro Plan" icon="rocket">
+    **Best for small firms**
+    - Multiple users
+    - Standard features
+    - Email support
+    - Practice area templates
+  </Card>
+
+  <Card title="Teams Plan" icon="users">
+    **Best for growing practices**
+    - More users per workspace
+    - Advanced features
+    - Priority support
+    - Custom integrations
+    - Department management
+  </Card>
+
+  <Card title="Enterprise Plan" icon="building">
+    **Best for large firms**
+    - Unlimited users
+    - All features
+    - Dedicated support
+    - Custom SLA
+    - On-premise options
+    - White-label capabilities
+  </Card>
+</CardGroup>
+
+<Note>
+  Subscription billing is in **GHS** (Ghanaian Cedi). Plans are billed monthly or yearly based on your selection.
+</Note>
+
+## What Happens After Creation
+
+Once you create a workspace, Clerra automatically:
+
+### 1. Sets Up Your Account
+- Creates your user account
+- Assigns you the **Super-Admin** role
+- Grants all permissions for workspace management
+
+### 2. Initializes the Workspace
+- Creates workspace with your chosen name
+- Sets up default departments (if applicable)
+- Configures workspace settings
+- Sets timezone to Africa/Accra (Ghana)
+
+### 3. Creates Default Structure
+- **Default Roles**: Super-Admin, Attorney, Paralegal, Member, Client
+- **Default Folders**: Team vault, Private vault, Knowledge base
+- **Templates**: Standard playbook templates based on practice areas
+
+### 4. Sends Invitations
+- Emails sent to any team members you invited
+- Each receives a unique invitation link
+- Links valid for 7 days
+
+### 5. Starts Trial/Subscription
+- 7-day trial period begins (if applicable)
+- Or subscription activates if payment completed
+- Access to all features based on selected plan
+
+## Post-Creation Setup
+
+After your workspace is created, complete these setup steps:
+
+<Steps>
+  <Step title="Verify Settings">
+    - Go to Settings (click workspace name at top-right)
+    - Review general settings
+    - Confirm timezone (Africa/Accra, Ghana)
+    - Add firm logo and branding
+  </Step>
+
+  <Step title="Create Departments">
+    - Navigate to Settings > Departments
+    - Create departments for your practice areas
+    - Assign department heads
+  </Step>
+
+  <Step title="Invite Team Members">
+    - Go to Users, Roles, Rates
+    - Invite additional team members
+    - Assign appropriate roles and departments
+  </Step>
+
+  <Step title="Configure Billing">
+    - Set default billing rates
+    - Configure invoice templates
+    - Set up tax settings for Ghana
+  </Step>
+
+  <Step title="Customize Templates">
+    - Review and customize case templates
+    - Set up document templates
+    - Configure intake forms
+  </Step>
+
+  <Step title="Import Data (Optional)">
+    - Import existing clients
+    - Import active cases
+    - Upload historical documents
+  </Step>
+</Steps>
+
+## Multiple Workspaces
+
+Depending on your plan, you may create multiple workspaces:
+
+- **Pro Plan**: 3 workspaces
+- **Teams Plan**: 10 workspaces
+- **Enterprise Plan**: Unlimited workspaces
+
+**Use Cases for Multiple Workspaces:**
+- Separate office locations
+- Different practice entities
+- Client-specific workspaces
+- Development/testing environments
+
+<Warning>
+  Workspaces are completely isolated from each other. Data cannot be shared across workspaces for security and compliance.
+</Warning>
+
+## Workspace Settings
+
+Configure your workspace after creation:
+
+### General Settings
+
+**Workspace Information:**
+- Name and description
+- Logo and branding
+- Contact information
+- Physical address
+- Timezone (default: Africa/Accra, Ghana)
+
+**Business Hours:**
+- Operating hours
+- Weekend/holiday schedule
+- Affects reminder timing and automation
+
+### Security Settings
+
+**Authentication:**
+- Password policies
+- Two-factor authentication requirements
+- Session timeout duration
+- Passkey authentication support
+
+**Access Control:**
+- Default permissions for new users
+- Guest access policies
+- Client portal settings
+
+### Billing Settings
+
+**Default Rates:**
+- Attorney billing rates
+- Paralegal billing rates
+- Staff billing rates
+- Currency: GHS (Ghanaian Cedi)
+
+**Invoice Configuration:**
+- Invoice templates
+- Payment terms (NET 30, NET 60, etc.)
+- Tax configuration for Ghana
+- Late payment policies
+
+**Payment Processing:**
+- Payment provider: Paystack
+- Supported payment methods
+- Automatic payment reminders
+
+### Department Configuration
+
+Create and manage departments:
+- Department name and description
+- Department head assignment
+- Member management
+- Department-specific settings
+
+## Workspace Limits
+
+Each plan has different limits:
+
+**User Limits:**
+- Pro: Limited users per workspace
+- Teams: More users per workspace
+- Enterprise: Unlimited users
+
+**Storage Limits:**
+- Based on subscription plan
+- Document storage capacity
+- Email storage (if integrated)
+- Backup retention period
+
+**Feature Access:**
+- AI token limits vary by plan
+- Integration availability
+- Custom branding options
+- API access levels
+
+<Info>
+  Check your current usage and limits in Settings > Workspace > Usage Overview
+</Info>
+
+## Best Practices
+
+<Check>
+  **Choose Descriptive Name**: Use your firm's legal name for clarity
+</Check>
+
+<Check>
+  **Complete Setup Immediately**: Finish all setup steps before inviting many users
+</Check>
+
+<Check>
+  **Create Departments Early**: Set up departments before inviting team members
+</Check>
+
+<Check>
+  **Document Your Structure**: Note department organization and user assignments
+</Check>
+
+<Check>
+  **Start with Templates**: Use default templates, customize as you learn the system
+</Check>
+
+<Check>
+  **Test Before Inviting**: Create test cases and try workflows before full rollout
+</Check>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Workspace name already taken">
+    - Choose a different, unique name
+    - Add location or specialization to differentiate
+    - Use full legal entity name
+  </Accordion>
+
+  <Accordion title="Cannot complete subscription">
+    - Verify payment method is valid
+    - Check billing address is correct
+    - Ensure sufficient funds/credit
+    - Contact support if payment fails
+  </Accordion>
+
+  <Accordion title="Invitation emails not sending">
+    - Verify email addresses are correct
+    - Check recipient spam folders
+    - Resend invitations from Users section
+    - Contact support if persistent
+  </Accordion>
+
+  <Accordion title="Need to change workspace name after creation">
+    - Go to Settings > General
+    - Update workspace name
+    - Changes reflect immediately
+    - Note: URL slug may not change
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Workspace Settings" icon="gear" href="/workspace/settings">
+    Configure your workspace settings
+  </Card>
+  <Card title="Invite Team Members" icon="user-plus" href="/users/inviting-team-members">
+    Add your team to the workspace
+  </Card>
+  <Card title="Create Departments" icon="sitemap" href="/users/departments">
+    Organize your workspace with departments
+  </Card>
+</CardGroup>

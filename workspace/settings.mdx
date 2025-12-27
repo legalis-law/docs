@@ -1,0 +1,353 @@
+---
+title: 'Workspace Settings'
+description: 'Configure and manage your Clerra workspace settings'
+icon: 'gear'
+---
+
+## Overview
+
+Access workspace settings by clicking the **workspace name** at the top-right corner of the screen. This opens the Settings modal where you can configure various aspects of your workspace.
+
+<Note>
+  Most settings are only accessible to Super-Admins and users with appropriate permissions.
+</Note>
+
+## Accessing Settings
+
+<Steps>
+  <Step title="Click Workspace Name">
+    Click your workspace name at the top-right corner
+  </Step>
+
+  <Step title="Settings Modal Opens">
+    Settings modal appears with multiple tabs
+  </Step>
+
+  <Step title="Navigate Tabs">
+    Select the tab for the settings you want to configure
+  </Step>
+</Steps>
+
+## Settings Tabs
+
+### General Settings
+
+**Workspace Information:**
+- **Name**: Workspace/firm name
+- **Description**: Brief description of your practice
+- **Logo**: Upload firm logo (displayed throughout app)
+- **Contact Email**: Main contact email
+- **Phone Number**: Firm phone number
+- **Website**: Firm website URL
+- **Address**: Physical office address
+
+**Localization:**
+- **Timezone**: Africa/Accra, Ghana (default)
+- **Date Format**: DD/MM/YYYY or MM/DD/YYYY
+- **Currency**: GHS (Ghanaian Cedi)
+- **Language**: English (default)
+
+**Business Hours:**
+- Operating days and hours
+- Holiday schedule
+- Affects automated reminders and scheduling
+
+### Security Tab
+
+**Two-Factor Authentication (2FA):**
+- Enable/disable 2FA for all users
+- Require 2FA for specific roles
+- Configure 2FA methods (SMS, Authenticator app)
+- Passkey authentication support
+
+**Password Policies:**
+- Minimum password length
+- Complexity requirements
+- Password expiration period
+- Password history (prevent reuse)
+
+**Session Management:**
+- Session timeout duration
+- Concurrent session limits
+- Automatic logout on inactivity
+- Remember device settings
+
+**Access Control:**
+- IP whitelist/blacklist
+- Login attempt limits
+- Account lockout policies
+- Failed login notifications
+
+### Departments Tab
+
+Manage workspace departments:
+
+<Steps>
+  <Step title="View Departments">
+    See all existing departments
+  </Step>
+
+  <Step title="Create Department">
+    Click **Create Department** button
+    - Enter department name
+    - Add description
+    - Save department
+  </Step>
+
+  <Step title="Assign Department Head">
+    After creation:
+    - Select a user as department head
+    - Assign members to department
+  </Step>
+
+  <Step title="Manage Members">
+    Add/remove department members
+  </Step>
+</Steps>
+
+<Info>
+  See the [Departments Guide](/users/departments) for detailed information.
+</Info>
+
+### Billing Tab
+
+**Default Billing Rates:**
+- Attorney rate (per hour, in GHS)
+- Paralegal rate
+- Staff rate
+- Custom role rates
+
+**Invoice Configuration:**
+- Default invoice template
+- Payment terms (NET 30, NET 60)
+- Late payment interest rate
+- Invoice numbering format
+
+**Tax Settings:**
+- Ghana VAT configuration
+- Tax identification number
+- Tax-exempt status (if applicable)
+- Withholding tax settings
+
+**Payment Terms:**
+- Default payment due period
+- Accepted payment methods
+- Payment instructions
+- Bank account details
+
+### Integrations Tab
+
+Manage third-party integrations:
+
+**Available Integrations:**
+- **Zoom**: Video conferencing for client meetings
+- **LexisNexis**: Legal research integration
+- **Email**: Gmail/Outlook integration
+- **Calendar**: Google Calendar/Outlook Calendar sync
+- **API Access**: Enable API for custom integrations
+
+**For Each Integration:**
+- Enable/disable
+- Configure API keys
+- Set permissions
+- Test connection
+- View usage logs
+
+<Warning>
+  API keys and integration credentials should be kept secure. Only Super-Admins should configure integrations.
+</Warning>
+
+### Notifications Tab
+
+Configure workspace-wide notifications:
+
+**Email Notifications:**
+- Case assignments
+- Deadline reminders
+- Invoice sent/paid
+- Document uploaded
+- Comments and mentions
+- Approval requests
+
+**In-App Notifications:**
+- Real-time notifications
+- Notification preferences
+- Notification sound
+- Desktop notifications
+
+**Notification Frequency:**
+- Instant
+- Daily digest
+- Weekly summary
+- Custom schedule
+
+### Team Tab
+
+Quick access to user management:
+
+- View all workspace members
+- See pending invitations
+- Quick invite to workspace
+- User role distribution
+- Active vs inactive users
+
+<Tip>
+  For full user management, use **Users, Roles, Rates** in the main sidebar.
+</Tip>
+
+### Data & Privacy Tab
+
+**Data Retention:**
+- Document retention period
+- Case archival settings
+- Audit log retention
+- Automatic cleanup schedules
+
+**Privacy Settings:**
+- Client portal privacy policy
+- Data sharing preferences
+- Third-party data access
+- GDPR-style data controls
+
+**Export & Backup:**
+- Export workspace data
+- Schedule automatic backups
+- Backup retention period
+- Restore from backup
+
+### Advanced Tab
+
+**Workspace ID & Details:**
+- Workspace unique identifier
+- Creation date
+- Current plan and limits
+- Storage usage
+
+**Danger Zone:**
+- Transfer workspace ownership
+- Delete workspace (permanent)
+- Export all data
+- Reset to defaults
+
+<Warning>
+  Actions in the Danger Zone are irreversible. Proceed with extreme caution.
+</Warning>
+
+## Customization Options
+
+### Branding
+
+Upload custom branding elements:
+- **Logo**: Displayed in header and documents
+- **Favicon**: Browser tab icon
+- **Color Scheme**: Primary and secondary colors
+- **Email Templates**: Customize email branding
+
+### Email Templates
+
+Customize automated emails:
+- Welcome emails
+- Invitation emails
+- Invoice emails
+- Reminder emails
+- Notification emails
+
+Each template supports:
+- HTML formatting
+- Variable placeholders
+- Firm branding
+- Custom signatures
+
+### Document Templates
+
+Configure default templates:
+- Engagement letters
+- Retainer agreements
+- Invoice templates
+- Letter templates
+- Court filings
+
+## User Preferences vs Workspace Settings
+
+**Workspace Settings** (set by admins):
+- Apply to entire workspace
+- Affect all users
+- Require Super-Admin permissions
+- Examples: Billing rates, integrations, departments
+
+**User Preferences** (set by individuals):
+- Personal settings for each user
+- Don't affect others
+- Any user can configure
+- Examples: Notification preferences, dashboard layout
+
+## Best Practices
+
+<Check>
+  **Regular Reviews**: Review settings quarterly
+</Check>
+
+<Check>
+  **Document Changes**: Keep log of settings changes
+</Check>
+
+<Check>
+  **Test Integrations**: Verify integrations work after configuration
+</Check>
+
+<Check>
+  **Secure Credentials**: Never share API keys or passwords
+</Check>
+
+<Check>
+  **Backup Regularly**: Configure automatic backups
+</Check>
+
+<Check>
+  **Update Templates**: Keep email and document templates current
+</Check>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Cannot access settings">
+    - Verify you have Super-Admin role
+    - Check permissions in Users, Roles, Rates
+    - Contact workspace owner if needed
+  </Accordion>
+
+  <Accordion title="Integration not working">
+    - Verify API keys are correct
+    - Check integration status
+    - Test connection
+    - Review error logs
+    - Contact integration provider support
+  </Accordion>
+
+  <Accordion title="Changes not saving">
+    - Check internet connection
+    - Verify all required fields completed
+    - Clear browser cache
+    - Try different browser
+  </Accordion>
+
+  <Accordion title="2FA causing login issues">
+    - Use backup codes
+    - Contact support to disable temporarily
+    - Reconfigure authenticator app
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Create Departments" icon="sitemap" href="/users/departments">
+    Organize with departments
+  </Card>
+  <Card title="Invite Users" icon="user-plus" href="/users/inviting-team-members">
+    Add your team
+  </Card>
+  <Card title="Configure Billing" icon="dollar-sign" href="/billing/time-tracking">
+    Set up billing and time tracking
+  </Card>
+</CardGroup>

@@ -1,0 +1,448 @@
+---
+title: 'Client Intake'
+description: 'Streamline client onboarding with Clerra\'s intake system'
+icon: 'user-plus'
+---
+
+## Overview
+
+Client intake in Clerra is managed on the **Clients page**, not within cases. This allows you to onboard clients before cases are created and maintain a centralized client database.
+
+<Note>
+  **Important**: Client intake is managed on the **Clients** page in the sidebar, not within the case management section.
+</Note>
+
+## Client Intake Process
+
+<Steps>
+  <Step title="Client Submits Intake Form">
+    Potential client fills out intake form via client portal or website
+  </Step>
+
+  <Step title="Intake Review">
+    Legal team reviews submission and runs conflict check
+  </Step>
+
+  <Step title="Client Creation">
+    Approved client is added to Clerra system
+  </Step>
+
+  <Step title="Engagement">
+    Engagement letter sent and signed
+  </Step>
+
+  <Step title="Case Creation">
+    Case/matter created and linked to client
+  </Step>
+</Steps>
+
+## Accessing Client Intake
+
+Navigate to the **Clients** section in the sidebar to access all client intake and management features.
+
+<Info>
+  Only users with appropriate permissions (typically Super-Admins, Attorneys, and designated intake coordinators) can access client intake features.
+</Info>
+
+## Intake Forms
+
+### Creating Custom Intake Forms
+
+Build intake forms tailored to your practice areas:
+
+<Steps>
+  <Step title="Navigate to Clients">
+    Go to **Clients** > **Intake Forms**
+  </Step>
+
+  <Step title="Create New Form">
+    Click **New Intake Form**
+  </Step>
+
+  <Step title="Configure Form">
+    **Basic Information:**
+    - Form name (e.g., "Personal Injury Intake", "Corporate Client Onboarding")
+    - Practice area
+    - Department assignment
+
+    **Form Fields:**
+    - Client information (name, contact, company)
+    - Matter details (case type, description, urgency)
+    - Custom questions specific to practice area
+    - Document upload fields
+    - Conflict check questions
+  </Step>
+
+  <Step title="Configure Routing">
+    Set up automatic routing:
+    - Assign to specific department
+    - Notify designated attorney
+    - Trigger workflow automation
+  </Step>
+
+  <Step title="Publish Form">
+    Save and publish - form becomes available in client portal
+  </Step>
+</Steps>
+
+### Standard Intake Form Fields
+
+<AccordionGroup>
+  <Accordion title="Client Information" icon="user">
+    - Full name
+    - Email address
+    - Phone number
+    - Physical address
+    - Company/organization (if applicable)
+    - Tax ID / Registration number
+  </Accordion>
+
+  <Accordion title="Matter Information" icon="briefcase">
+    - Type of legal matter
+    - Brief description of issue
+    - Urgency level
+    - Preferred outcome
+    - Important dates or deadlines
+    - Previous legal counsel (if any)
+  </Accordion>
+
+  <Accordion title="Conflict Check" icon="shield-check">
+    - Other parties involved
+    - Related companies or individuals
+    - Previous representations
+    - Potential conflicts of interest
+  </Accordion>
+
+  <Accordion title="Documentation" icon="file-upload">
+    - Supporting documents
+    - Contracts or agreements
+    - Evidence or correspondence
+    - Government filings
+  </Accordion>
+</AccordionGroup>
+
+## Client Portal Integration
+
+Clients can submit intake forms through the client portal:
+
+### Portal Submission Process
+
+1. **Access Portal**
+   - Client visits your firm's portal URL
+   - Or clicks intake link from your website
+
+2. **Select Matter Type**
+   - Client chooses practice area
+   - Appropriate intake form loads
+
+3. **Complete Form**
+   - Fill out all required fields
+   - Upload supporting documents
+   - Review and submit
+
+4. **Confirmation**
+   - Client receives confirmation email
+   - Tracking number provided
+   - Expected response timeline communicated
+
+<Tip>
+  Embed intake forms on your website or send direct links to potential clients for easy access.
+</Tip>
+
+## Managing Intake Submissions
+
+### Reviewing New Submissions
+
+<Steps>
+  <Step title="Access Inbox">
+    Go to **Clients** > **Intake Submissions**
+  </Step>
+
+  <Step title="View Pending">
+    Filter by status: **Pending Review**
+  </Step>
+
+  <Step title="Review Submission">
+    Click on submission to view:
+    - Client information
+    - Matter details
+    - Uploaded documents
+    - Conflict check responses
+  </Step>
+
+  <Step title="Run Conflict Check">
+    System highlights potential conflicts based on:
+    - Client name matching
+    - Party name matching
+    - Company name matching
+    - Related matter matching
+  </Step>
+
+  <Step title="Make Decision">
+    - **Accept**: Create client record and begin engagement
+    - **Request More Info**: Send follow-up questions
+    - **Decline**: Politely decline representation
+  </Step>
+</Steps>
+
+### Automated Intake Processing
+
+Configure automation for common scenarios:
+
+**Auto-Routing:**
+- Personal injury → Litigation department
+- Corporate matters → Corporate department
+- Real estate → Property department
+
+**Auto-Assignment:**
+- Assign to specific attorney based on matter type
+- Round-robin distribution for intake coordination
+- Load-balancing based on attorney capacity
+
+**Auto-Notifications:**
+- Notify relevant department head
+- Alert intake coordinator
+- Trigger conflict check workflow
+
+## Creating Clients from Intake
+
+When accepting an intake submission:
+
+<Steps>
+  <Step title="Accept Submission">
+    Click **Accept & Create Client**
+  </Step>
+
+  <Step title="Review Client Details">
+    Information from intake form auto-populates:
+    - Name and contact information
+    - Company details (if applicable)
+    - Address and tax information
+  </Step>
+
+  <Step title="Assign Department">
+    Department automatically assigned based on matter type or routing rules
+  </Step>
+
+  <Step title="Create Engagement">
+    Generate and send engagement letter
+  </Step>
+
+  <Step title="Create Case (Optional)">
+    Optionally create case/matter immediately or wait for engagement
+  </Step>
+</Steps>
+
+<Note>
+  Client records are created in the **Clients** database first, then cases are associated with the client record.
+</Note>
+
+## Intake Analytics
+
+Track intake performance and conversion:
+
+<CardGroup cols={2}>
+  <Card title="Submission Volume" icon="chart-line">
+    Monitor intake form submissions over time
+  </Card>
+  <Card title="Conversion Rate" icon="percentage">
+    Track acceptance vs. decline rates
+  </Card>
+  <Card title="Response Time" icon="clock">
+    Measure time from submission to first response
+  </Card>
+  <Card title="Source Analysis" icon="magnifying-glass-chart">
+    Identify where clients are finding you
+  </Card>
+</CardGroup>
+
+**Available Metrics:**
+- Total submissions by month/quarter
+- Acceptance rate by practice area
+- Average time to respond
+- Conflict check outcomes
+- Source attribution (website, referral, etc.)
+- Department-level intake performance
+
+## Engagement Letters
+
+Streamline engagement with automated letters:
+
+### Generating Engagement Letters
+
+<Steps>
+  <Step title="Select Client">
+    From accepted intake or client record
+  </Step>
+
+  <Step title="Choose Template">
+    Select engagement letter template based on:
+    - Practice area
+    - Matter type
+    - Fee arrangement
+  </Step>
+
+  <Step title="Customize">
+    System auto-fills:
+    - Client information
+    - Matter description
+    - Scope of representation
+    - Fee structure
+  </Step>
+
+  <Step title="Review & Send">
+    Review letter, send for electronic signature
+  </Step>
+
+  <Step title="Track Status">
+    Monitor signature status and send reminders if needed
+  </Step>
+</Steps>
+
+<Tip>
+  Use electronic signature integration (DocuSign, etc.) for faster engagement and better client experience.
+</Tip>
+
+## Conflict Checking
+
+Automated conflict detection:
+
+### How Conflict Checking Works
+
+1. **Data Collection**
+   - Client name and aliases
+   - Opposing parties
+   - Related companies
+   - Previous counsel
+
+2. **Database Search**
+   - Search existing clients
+   - Search active cases
+   - Search archived matters
+   - Search excluded parties list
+
+3. **Matching Algorithm**
+   - Exact name matches
+   - Fuzzy matching for similar names
+   - Company affiliation matching
+   - Related party detection
+
+4. **Results Review**
+   - Potential conflicts highlighted
+   - Relationship mapping shown
+   - Manual review required for final decision
+
+<Warning>
+  Automated conflict checking is a tool, not a replacement for attorney judgment. Always manually review potential conflicts before accepting representation.
+</Warning>
+
+## Declining Representation
+
+When declining an intake submission:
+
+<Steps>
+  <Step title="Select Submission">
+    Choose the intake to decline
+  </Step>
+
+  <Step title="Choose Reason">
+    Select decline reason:
+    - Conflict of interest
+    - Outside practice area
+    - Insufficient resources
+    - Statute of limitations concerns
+    - Other
+  </Step>
+
+  <Step title="Provide Referrals (Optional)">
+    Suggest alternative counsel if appropriate
+  </Step>
+
+  <Step title="Send Notice">
+    System sends professional decline letter to potential client
+  </Step>
+
+  <Step title="Document">
+    Record maintained for compliance and future reference
+  </Step>
+</Steps>
+
+<Info>
+  All decline decisions are logged for compliance and to prevent accidental future acceptance of conflicted matters.
+</Info>
+
+## Best Practices
+
+<Check>
+  **Respond Quickly**: Aim to respond to intake submissions within 24-48 hours
+</Check>
+
+<Check>
+  **Clear Forms**: Keep intake forms concise but comprehensive
+</Check>
+
+<Check>
+  **Automated Routing**: Set up routing rules to ensure prompt assignment
+</Check>
+
+<Check>
+  **Thorough Conflict Checks**: Never skip conflict checking, even for referrals
+</Check>
+
+<Check>
+  **Professional Declines**: Always send courteous decline letters with referrals when possible
+</Check>
+
+<Check>
+  **Track Metrics**: Monitor intake performance to optimize conversion
+</Check>
+
+<Check>
+  **Follow Up**: Set reminders to follow up on pending engagements
+</Check>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Client not receiving intake form confirmation">
+    - Check email address for typos
+    - Verify confirmation emails are enabled
+    - Check client's spam folder
+    - Resend confirmation manually
+  </Accordion>
+
+  <Accordion title="Conflict check not finding matches">
+    - Verify search algorithm settings
+    - Check if client name has unusual spelling
+    - Manually search database
+    - Review archived cases as well
+  </Accordion>
+
+  <Accordion title="Intake form not capturing all information">
+    - Review form fields and make required
+    - Add validation rules
+    - Test form submission
+    - Update form based on feedback
+  </Accordion>
+
+  <Accordion title="Cannot create client from intake">
+    - Verify you have create_clients permission
+    - Check for duplicate client records
+    - Ensure all required fields are completed
+    - Review error messages for specific issues
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Creating Cases" icon="briefcase" href="/cases/creating-cases">
+    Create cases after client onboarding
+  </Card>
+  <Card title="Client Portal" icon="browser" href="/collaboration/client-portal">
+    Learn about client portal features
+  </Card>
+  <Card title="Engagement Management" icon="file-signature" href="/documents/templates">
+    Create engagement letter templates
+  </Card>
+</CardGroup>

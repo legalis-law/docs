@@ -1,0 +1,457 @@
+---
+title: 'Case Checklists'
+description: 'Comprehensive checklist management for case workflows'
+icon: 'list-check'
+---
+
+## Overview
+
+Checklists are Clerra's primary workflow management tool. They replace the deprecated case timelines system and provide flexible, customizable task management for all cases and matters.
+
+<Note>
+  **Case timelines have been deprecated.** All case tracking and workflow management now uses checklists for better flexibility and control.
+</Note>
+
+## Why Checklists?
+
+<CardGroup cols={2}>
+  <Card title="Flexible Workflows" icon="diagram-project">
+    Adapt to any case type or matter with customizable task lists
+  </Card>
+  <Card title="Team Collaboration" icon="users">
+    Assign tasks, track progress, and collaborate in real-time
+  </Card>
+  <Card title="Never Miss Deadlines" icon="bell">
+    Automated reminders and dependency tracking
+  </Card>
+  <Card title="Progress Visibility" icon="chart-line">
+    Clear visual indicators of case completion status
+  </Card>
+</CardGroup>
+
+## Creating a Checklist
+
+<Steps>
+  <Step title="Open Case">
+    Navigate to the case where you want to add a checklist
+  </Step>
+
+  <Step title="Go to Checklists Tab">
+    Click on the **Checklists** tab in the case view
+  </Step>
+
+  <Step title="Add Checklist">
+    Click **Add Checklist** button
+  </Step>
+
+  <Step title="Choose Source">
+    **Option 1: From Template**
+    - Select from playbook templates
+    - Pre-built checklists for common case types
+    - Automatically populated with standard tasks
+
+    **Option 2: Create Custom**
+    - Start with blank checklist
+    - Build task list from scratch
+    - Customize for unique matters
+  </Step>
+
+  <Step title="Configure Checklist">
+    - **Name**: Checklist name (e.g., "Discovery Phase", "Trial Preparation")
+    - **Description**: Brief overview of the checklist's purpose
+    - **Phase** (optional): Associate with case phase
+  </Step>
+
+  <Step title="Add Tasks">
+    Begin adding checklist items (see below)
+  </Step>
+</Steps>
+
+## Checklist Items
+
+### Creating Checklist Items
+
+Each checklist can have multiple items with detailed properties:
+
+**Required Fields:**
+- **Task Name**: Clear description of what needs to be done
+- **Status**: Not Started, In Progress, Completed, Blocked
+
+**Optional Fields:**
+- **Assignee**: Team member responsible for the task
+- **Due Date**: Deadline for completion
+- **Priority**: High, Medium, Low
+- **Dependencies**: Tasks that must be completed first
+- **Description**: Additional details or instructions
+- **Attachments**: Related documents or resources
+
+### Task Hierarchy
+
+Organize complex workflows with hierarchical tasks:
+
+```text
+Phase 1: Discovery
+  ├── Initial Disclosures
+  │   ├── Prepare initial disclosure statement
+  │   ├── Gather supporting documents
+  │   └── Review and file with court
+  ├── Interrogatories
+  │   ├── Draft interrogatories
+  │   ├── Review with case manager
+  │   ├── Serve on opposing party
+  │   └── Track responses
+  └── Document Requests
+      ├── Identify needed documents
+      ├── Draft request for production
+      └── Follow up on production
+```
+
+<Tip>
+  Use sub-tasks (hierarchical organization) for complex items that have multiple steps.
+</Tip>
+
+## Task Status Types
+
+<CardGroup cols={2}>
+  <Card title="Not Started" icon="circle">
+    Task has not been begun, awaiting assignment or prerequisites
+  </Card>
+  <Card title="In Progress" icon="spinner">
+    Work is actively being performed on this task
+  </Card>
+  <Card title="Completed" icon="circle-check">
+    Task is finished and verified
+  </Card>
+  <Card title="Blocked" icon="circle-exclamation">
+    Task cannot proceed due to blocker (dependency, missing info, etc.)
+  </Card>
+</CardGroup>
+
+## Task Dependencies
+
+Link tasks that must be completed in a specific order:
+
+<Steps>
+  <Step title="Select Task">
+    Click on the task that depends on another
+  </Step>
+
+  <Step title="Add Dependency">
+    Click **Add Dependency**
+  </Step>
+
+  <Step title="Select Prerequisite">
+    Choose the task that must be completed first
+  </Step>
+
+  <Step title="Save">
+    Dependent task is blocked until prerequisite is completed
+  </Step>
+</Steps>
+
+**Example:**
+- Task: "File motion for summary judgment"
+- Dependency: "Complete legal research and draft motion"
+- Result: Filing task cannot be marked complete until draft is done
+
+## Assigning Tasks
+
+Delegate checklist items to team members:
+
+<Steps>
+  <Step title="Select Task">
+    Click on the checklist item
+  </Step>
+
+  <Step title="Assign User">
+    Select team member from the dropdown (only shows case team members)
+  </Step>
+
+  <Step title="Set Deadline">
+    Add due date if applicable
+  </Step>
+
+  <Step title="Notify">
+    Assignee receives notification with task details
+  </Step>
+</Steps>
+
+<Info>
+  You can only assign tasks to team members who are already assigned to the case. Add them to the case team first if needed.
+</Info>
+
+## Priority Levels
+
+Set priority to help team members focus:
+
+- **High Priority** 🔴: Urgent tasks, critical deadlines, court dates
+- **Medium Priority** 🟡: Important but not time-sensitive
+- **Low Priority** 🟢: Nice-to-have tasks, administrative items
+
+**Visual Indicators:**
+- High priority items appear at the top of lists
+- Color-coded badges for quick identification
+- Overdue high-priority items trigger escalation notifications
+
+## Due Dates & Reminders
+
+### Setting Due Dates
+
+<Steps>
+  <Step title="Edit Task">
+    Click on the checklist item
+  </Step>
+
+  <Step title="Set Due Date">
+    Select date from calendar picker
+  </Step>
+
+  <Step title="Configure Reminders">
+    Choose when to send reminders:
+    - 1 day before
+    - 3 days before
+    - 1 week before
+    - Custom reminder schedule
+  </Step>
+
+  <Step title="Save">
+    Automatic reminders will be sent to assignee
+  </Step>
+</Steps>
+
+### Deadline Tracking
+
+System automatically:
+- Sends reminders based on your settings
+- Highlights overdue items in red
+- Notifies case manager of overdue tasks
+- Shows upcoming deadlines in dashboard
+
+## Progress Tracking
+
+### Completion Percentage
+
+Checklists automatically calculate completion:
+
+```
+Completion % = (Completed Items / Total Items) × 100
+```
+
+**Visual Progress:**
+- Progress bar shows percentage complete
+- Color-coded:
+  - Red (0-30%): Just started
+  - Yellow (31-70%): Making progress
+  - Green (71-100%): Nearly complete
+
+### Progress Reports
+
+Generate progress reports:
+- Checklist completion status
+- Time to complete items
+- Team member performance
+- Bottleneck identification
+
+## Checklist Templates
+
+Save time with reusable templates:
+
+### Using Templates
+
+<Steps>
+  <Step title="Access Templates">
+    When creating a checklist, select **From Template**
+  </Step>
+
+  <Step title="Choose Template">
+    Browse available templates:
+    - By case type (Litigation, Corporate, Real Estate)
+    - By phase (Discovery, Trial, Closing)
+    - Custom templates created by your firm
+  </Step>
+
+  <Step title="Customize">
+    Review and modify tasks as needed for the specific case
+  </Step>
+
+  <Step title="Apply">
+    Checklist is created with all template items
+  </Step>
+</Steps>
+
+### Creating Custom Templates
+
+Save your checklist as a template for future use:
+
+1. Create and perfect a checklist
+2. Click **Save as Template**
+3. Name the template
+4. Add description and tags
+5. Set visibility (Private, Department, Workspace)
+6. Template is now available for future cases
+
+<Tip>
+  Build a library of templates for your most common case types to ensure consistency and save time.
+</Tip>
+
+## Collaboration Features
+
+### Comments & Discussions
+
+Discuss tasks directly in the checklist:
+
+- Click on any task to add comments
+- Mention team members with @username
+- Attach files or links
+- Track discussion history
+
+### Real-Time Updates
+
+All changes sync in real-time:
+- Team members see updates immediately
+- Status changes reflected instantly
+- Notifications sent for important changes
+- Conflict prevention with concurrent editing
+
+### Activity Log
+
+View complete history:
+- Who created each task
+- Status change history
+- Assignment changes
+- Completion dates
+- Comments and edits
+
+## Best Practices
+
+<Check>
+  **Start with Templates**: Use proven templates as starting points
+</Check>
+
+<Check>
+  **Break Down Complex Tasks**: Create sub-tasks for multi-step items
+</Check>
+
+<Check>
+  **Set Realistic Deadlines**: Account for dependencies and team capacity
+</Check>
+
+<Check>
+  **Assign Ownership**: Every task should have a clear assignee
+</Check>
+
+<Check>
+  **Use Dependencies**: Prevent work on blocked tasks
+</Check>
+
+<Check>
+  **Regular Reviews**: Weekly checklist review with team
+</Check>
+
+<Check>
+  **Update Promptly**: Mark tasks complete as work finishes
+</Check>
+
+<Check>
+  **Document Blockers**: Add comments explaining why tasks are blocked
+</Check>
+
+## Common Checklist Examples
+
+### Litigation Case Checklist
+
+```text
+Pre-Filing Phase
+☐ Client consultation and conflict check
+☐ Gather facts and evidence
+☐ Legal research
+☐ Draft complaint
+☐ File complaint and pay fees
+
+Discovery Phase
+☐ Serve initial disclosures
+☐ Draft and serve interrogatories
+☐ Draft and serve requests for production
+☐ Schedule depositions
+☐ Review and respond to opposing discovery
+
+Motion Practice
+☐ Identify motions to file
+☐ Research and draft motions
+☐ File motions and supporting documents
+☐ Respond to opposing motions
+☐ Attend hearing
+
+Trial Preparation
+☐ Create witness list
+☐ Prepare exhibits
+☐ Draft trial briefs
+☐ Conduct mock trial
+☐ Finalize trial notebook
+```
+
+### Corporate Transaction Checklist
+
+```text
+Due Diligence
+☐ Review corporate documents
+☐ Financial analysis
+☐ Legal compliance review
+☐ Identify red flags
+☐ Prepare due diligence report
+
+Negotiation
+☐ Draft term sheet
+☐ Negotiate key terms
+☐ Finalize purchase agreement
+☐ Review ancillary agreements
+
+Closing
+☐ Prepare closing checklist
+☐ Execute transaction documents
+☐ Transfer funds
+☐ File necessary filings
+☐ Post-closing documentation
+```
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Cannot mark task as complete">
+    - Check if task has incomplete dependencies
+    - Verify you have permission to update the checklist
+    - Ensure task is assigned to you or you're case manager
+  </Accordion>
+
+  <Accordion title="Checklist not showing progress">
+    - Refresh the page
+    - Verify tasks are being marked complete (not just in progress)
+    - Check if sub-tasks are properly nested
+  </Accordion>
+
+  <Accordion title="Missing reminder notifications">
+    - Check your notification settings
+    - Verify email/in-app notification preferences
+    - Ensure due dates are set correctly
+  </Accordion>
+
+  <Accordion title="Cannot assign task to team member">
+    - Verify they're on the case team
+    - Check if they have appropriate role/permissions
+    - Add them to case team first
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Case Workflow" icon="diagram-project" href="/cases/case-workflow">
+    Learn overall case workflow management
+  </Card>
+  <Card title="Playbooks" icon="book" href="/playbooks/overview">
+    Automate checklist creation with playbooks
+  </Card>
+  <Card title="Team Collaboration" icon="users" href="/collaboration/real-time-features">
+    Collaborate effectively on cases
+  </Card>
+</CardGroup>

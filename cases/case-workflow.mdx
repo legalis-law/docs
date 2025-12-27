@@ -1,0 +1,344 @@
+---
+title: 'Case Workflow'
+description: 'Managing case lifecycle and workflow in Clerra'
+icon: 'diagram-project'
+---
+
+## Overview
+
+Clerra provides comprehensive workflow management for cases and matters, using **checklists** as the primary workflow tool. Case timelines have been deprecated in favor of the more flexible checklist system.
+
+<Note>
+  **Important**: Case timelines are deprecated. All case tracking and workflow management now uses **checklists**.
+</Note>
+
+## Case Lifecycle
+
+Cases and matters in Clerra follow a standard lifecycle:
+
+<Steps>
+  <Step title="Intake & Creation">
+    Case is created through AI-assisted intake or manual entry
+  </Step>
+
+  <Step title="Assignment">
+    Case manager (originating attorney) and team members are assigned automatically based on department
+  </Step>
+
+  <Step title="Active Work">
+    Team works through checklist items, manages documents, tracks time
+  </Step>
+
+  <Step title="Review & Approval">
+    Key deliverables and decisions go through approval workflow
+  </Step>
+
+  <Step title="Closure">
+    Case is closed when all checklist items are complete and final billing is done
+  </Step>
+
+  <Step title="Archive">
+    Closed cases are archived for compliance and reference
+  </Step>
+</Steps>
+
+## Case Status Management
+
+### Available Statuses
+
+<CardGroup cols={2}>
+  <Card title="Open - New" icon="circle-plus">
+    Newly created case, initial setup phase
+  </Card>
+  <Card title="Open - In Progress" icon="spinner">
+    Active work is being performed on the case
+  </Card>
+  <Card title="Open - On Hold" icon="circle-pause">
+    Temporarily paused, waiting for external input
+  </Card>
+  <Card title="Open - Review" icon="magnifying-glass">
+    Under review before proceeding to next phase
+  </Card>
+  <Card title="Closed - Won" icon="circle-check">
+    Case resolved favorably
+  </Card>
+  <Card title="Closed - Lost" icon="circle-xmark">
+    Case resolved unfavorably
+  </Card>
+  <Card title="Closed - Settled" icon="handshake">
+    Case resolved through settlement
+  </Card>
+  <Card title="Archived" icon="box-archive">
+    Case archived for record-keeping
+  </Card>
+</CardGroup>
+
+### Changing Case Status
+
+<Steps>
+  <Step title="Open the Case">
+    Navigate to the case details page
+  </Step>
+
+  <Step title="Update Status">
+    Click the status dropdown and select new status
+  </Step>
+
+  <Step title="Add Notes (Optional)">
+    Add reason for status change or additional context
+  </Step>
+
+  <Step title="Save Changes">
+    Status updates immediately and team is notified
+  </Step>
+</Steps>
+
+## Workflow Management with Checklists
+
+Checklists are the primary tool for managing case workflows. See the [Checklists](/cases/checklists) guide for detailed information.
+
+**Key Workflow Features:**
+- **Phased Checklists**: Organize work into phases (Discovery, Pleadings, Trial, etc.)
+- **Dependencies**: Link tasks that must be completed in sequence
+- **Assignments**: Delegate checklist items to specific team members
+- **Due Dates**: Set deadlines with automated reminders
+- **Progress Tracking**: Visual progress indicators show completion percentage
+
+## Case Assignment & Team Management
+
+### Case Manager (Originating Attorney)
+
+The case manager has special responsibilities:
+
+<AccordionGroup>
+  <Accordion title="Primary Responsibilities" icon="user-tie">
+    - Overall case strategy and direction
+    - Client communication and relationship management
+    - Budget and billing setup (has setup_case_billing permission)
+    - Team assignment and workload distribution
+    - Final review and approval of deliverables
+  </Accordion>
+
+  <Accordion title="Special Permissions" icon="key">
+    - Setup case billing and rates
+    - Approve time entries and expenses
+    - Close or archive the case
+    - Assign/remove team members
+    - Access all case documents and communications
+  </Accordion>
+</AccordionGroup>
+
+### Assigning Team Members
+
+<Steps>
+  <Step title="Open Case Details">
+    Navigate to the case you want to update
+  </Step>
+
+  <Step title="Go to Team Section">
+    Click on the **Team** tab
+  </Step>
+
+  <Step title="Add Team Members">
+    - Click **Add Team Member**
+    - Select user(s) from your workspace
+    - Assign their role on the case (Attorney, Paralegal, etc.)
+    - Set their billing rate (if different from default)
+  </Step>
+
+  <Step title="Save Assignments">
+    Team members receive notification and gain access to the case
+  </Step>
+</Steps>
+
+<Tip>
+  Team members are automatically drawn from the case's assigned department. Cross-department assignments can be made when needed.
+</Tip>
+
+## Department-Based Workflow
+
+Cases are automatically associated with departments:
+
+**How It Works:**
+1. User logs in → automatically logged into their assigned department
+2. Creates case → case automatically associated with user's department
+3. Team members from same department can view/access the case
+4. Cross-department sharing available when needed
+
+<Info>
+  Department assignment happens automatically at the backend. Users don't manually select departments when creating cases.
+</Info>
+
+## Document Workflow
+
+Documents in cases follow their own workflow:
+
+<Steps>
+  <Step title="Upload">
+    Documents uploaded to case vault
+  </Step>
+
+  <Step title="Review">
+    Team members review and comment
+  </Step>
+
+  <Step title="Approval">
+    Key documents require approval from case manager
+  </Step>
+
+  <Step title="Finalization">
+    Approved documents marked as final version
+  </Step>
+
+  <Step title="Archive">
+    Completed documents moved to archive folder
+  </Step>
+</Steps>
+
+## Billing Workflow Integration
+
+Case workflow integrates with billing:
+
+**Time Tracking:**
+- Time entries created as work progresses
+- Attached to specific case and matter
+- Tagged with department automatically
+- Reviewed by case manager
+
+**Invoice Generation:**
+- Case manager generates invoices from approved time entries
+- Invoices sent for approval workflow
+- Approved invoices sent to clients
+- Payment tracking integrated with case status
+
+<Warning>
+  Only the case manager (originating attorney) can setup case billing. Other users must have explicit super-admin permissions to manage billing.
+</Warning>
+
+## Approval Workflows
+
+Cases may require approvals at various stages:
+
+<CardGroup cols={2}>
+  <Card title="Document Approval" icon="file-check">
+    Key documents reviewed and approved before filing or sending
+  </Card>
+  <Card title="Time Entry Approval" icon="clock-check">
+    Billable time reviewed before invoicing
+  </Card>
+  <Card title="Invoice Approval" icon="receipt">
+    Invoices approved before sending to clients
+  </Card>
+  <Card title="Settlement Approval" icon="handshake">
+    Settlement terms reviewed by senior attorneys
+  </Card>
+</CardGroup>
+
+**Approval Process:**
+1. Item submitted for approval
+2. Designated approver receives notification
+3. Approver reviews and either approves or rejects
+4. If rejected, item returns to submitter with feedback
+5. If approved, workflow continues to next stage
+
+## Case Handoff & Transfer
+
+Transfer cases between attorneys or departments:
+
+<Steps>
+  <Step title="Open Case">
+    Navigate to the case to be transferred
+  </Step>
+
+  <Step title="Change Case Manager">
+    Click **Change Case Manager** and select new attorney
+  </Step>
+
+  <Step title="Update Team">
+    Add new team members, remove old team members as needed
+  </Step>
+
+  <Step title="Update Department (if needed)">
+    If transferring departments, update department assignment
+  </Step>
+
+  <Step title="Add Handoff Notes">
+    Document important context, pending items, client preferences
+  </Step>
+
+  <Step title="Notify Team">
+    System automatically notifies all affected parties
+  </Step>
+</Steps>
+
+## Automation & Playbooks
+
+Automate repetitive workflows with playbooks:
+
+**Common Automated Workflows:**
+- New case setup (create folders, assign checklist template, notify team)
+- Discovery phase initiation (generate document requests, set deadlines)
+- Trial preparation (create trial binder structure, assign tasks)
+- Case closure (finalize billing, archive documents, send closure notice)
+
+<Tip>
+  See the [Playbooks](/playbooks/overview) section for detailed information on creating and using workflow automation.
+</Tip>
+
+## Workflow Monitoring
+
+Track workflow progress across your workspace:
+
+**Available Views:**
+- **My Cases**: Cases where you're assigned
+- **Department Cases**: All cases in your department
+- **Overdue Items**: Tasks and deadlines that are past due
+- **Pending Approvals**: Items awaiting your approval
+- **Recently Updated**: Cases with recent activity
+
+**Filtering Options:**
+- By status (Open, Closed, etc.)
+- By case type (Litigation, Corporate, etc.)
+- By assignment (Case manager, team member)
+- By department
+- By date range
+
+## Best Practices
+
+<Check>
+  **Use Checklist Templates**: Create templates for common case types to ensure consistent workflows
+</Check>
+
+<Check>
+  **Set Clear Deadlines**: Use checklist due dates with automated reminders
+</Check>
+
+<Check>
+  **Regular Status Updates**: Update case status as work progresses
+</Check>
+
+<Check>
+  **Document Handoffs**: Always add detailed notes when transferring cases
+</Check>
+
+<Check>
+  **Monitor Workload**: Regularly review team assignments to prevent overload
+</Check>
+
+<Check>
+  **Close Cases Promptly**: Close cases when work is complete to maintain accurate metrics
+</Check>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Checklists" icon="list-check" href="/cases/checklists">
+    Master checklist-based workflow management
+  </Card>
+  <Card title="Case Sharing" icon="share-nodes" href="/cases/case-sharing">
+    Share cases across departments and teams
+  </Card>
+  <Card title="Playbooks" icon="wand-magic-sparkles" href="/playbooks/overview">
+    Automate workflows with playbooks
+  </Card>
+</CardGroup>
