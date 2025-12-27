@@ -1,0 +1,49 @@
+---
+title: 'API Access'
+description: 'Build custom integrations with Clerra API'
+icon: 'code'
+---
+
+## Overview
+
+Clerra provides a RESTful API for custom integrations and automation.
+
+## Getting API Access
+
+<Steps>
+  <Step title="Generate API Key">
+    Go to Settings > Integrations > API Access
+  </Step>
+
+  <Step title="Create Key">
+    Click **Generate New API Key**
+  </Step>
+
+  <Step title="Save Securely">
+    Copy and store key securely (shown only once)
+  </Step>
+
+  <Step title="Use in Requests">
+    Include key in Authorization header
+  </Step>
+</Steps>
+
+## API Capabilities
+
+- Create and manage cases
+- Upload and retrieve documents
+- Manage time entries
+- Access client data
+- Create invoices
+- Query analytics
+
+## Authentication
+
+```bash
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+  https://api.clerra.app/v1/cases
+```
+
+<Warning>
+  API keys provide full access to your workspace. Keep them secure and rotate regularly.
+</Warning>

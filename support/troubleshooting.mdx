@@ -1,0 +1,235 @@
+---
+title: 'Troubleshooting'
+description: 'Common issues and solutions'
+icon: 'screwdriver-wrench'
+---
+
+## Login & Access Issues
+
+### Cannot Log In
+
+**Problem**: Unable to log in to Clerra
+
+**Solutions**:
+1. Verify you're using the correct email address
+2. Check that you're entering the verification code correctly
+3. Look for the magic link email (check spam folder)
+4. Clear browser cache and cookies
+5. Try a different browser
+6. Reset your password if needed
+
+### Magic Link Not Working
+
+**Problem**: Magic link in email doesn't work
+
+**Solutions**:
+1. Ensure you're clicking the link from the same device/browser
+2. Check if the link has expired (links expire after a certain time)
+3. Request a new magic link
+4. Copy and paste the link instead of clicking
+5. Disable browser extensions that might block the link
+
+### Two-Factor Authentication Issues
+
+**Problem**: 2FA code not working
+
+**Solutions**:
+1. Verify your device time is synchronized
+2. Generate a new code (codes expire every 30 seconds)
+3. Use backup codes if available
+4. Contact your workspace Super-Admin to temporarily disable 2FA
+5. Reconfigure your authenticator app
+
+## Case Management Issues
+
+### Cannot Create Case
+
+**Problem**: Unable to create a new case
+
+**Solutions**:
+1. Verify you have `create_cases` permission
+2. Ensure you're assigned to a department
+3. Check all required fields are filled
+4. Verify your workspace hasn't reached case limits
+5. Try refreshing the page
+
+### Case Not Showing in List
+
+**Problem**: Created case doesn't appear
+
+**Solutions**:
+1. Check filter settings (status, department, date range)
+2. Verify the case is in your department
+3. Refresh the page
+4. Clear search/filter criteria
+5. Check if case was actually created (check recent activity)
+
+### Cannot Assign Team Members
+
+**Problem**: Unable to add team members to case
+
+**Solutions**:
+1. Verify user exists in workspace
+2. Check if user is in a compatible department
+3. Ensure you have permission to assign users
+4. Verify the user's role allows case assignment
+5. Try assigning one user at a time
+
+## Document/Vault Issues
+
+### Upload Failing
+
+**Problem**: Document upload fails or hangs
+
+**Solutions**:
+1. Check file size (maximum 2GB)
+2. Verify file type is supported
+3. Check internet connection stability
+4. Try uploading smaller files first
+5. Clear browser cache
+6. Use a wired connection for large files
+
+### Cannot Access Document
+
+**Problem**: Document shows as unavailable
+
+**Solutions**:
+1. Verify you have permission to view the document
+2. Check if document is in correct vault (Team/Private/Knowledge Base)
+3. Ensure document wasn't deleted or archived
+4. Check your department access
+5. Contact the document owner
+
+## AI Assistant Issues
+
+### AI Not Responding
+
+**Problem**: AI Assistant not generating responses
+
+**Solutions**:
+1. Check internet connection
+2. Verify you haven't reached monthly token limit
+3. Refresh the page
+4. Try a shorter, simpler question first
+5. Check workspace AI settings
+6. Contact support if persistent
+
+### AI Panel Not Visible
+
+**Problem**: Cannot see AI Assistant floating panel
+
+**Solutions**:
+1. Look at the bottom of the page
+2. Check if panel is minimized
+3. Scroll to ensure it's not hidden
+4. Refresh the page
+5. Try a different page
+6. Clear browser cache
+
+## Billing & Time Tracking
+
+### Time Entry Not Saving
+
+**Problem**: Time entries disappear or don't save
+
+**Solutions**:
+1. Check internet connection before submitting
+2. Ensure all required fields are filled
+3. Verify time doesn't overlap with existing entries
+4. Check if case allows time tracking
+5. Submit entries before browser timeout
+
+### Cannot Setup Case Billing
+
+**Problem**: Billing setup option not available
+
+**Solutions**:
+1. Verify you're the case manager (originating attorney)
+2. Check if you have `setup_case_billing` permission
+3. Ensure billing is enabled for workspace
+4. Contact Super-Admin if you should have access
+
+## Performance Issues
+
+### Slow Loading
+
+**Problem**: Clerra loads slowly
+
+**Solutions**:
+1. Check internet connection speed (minimum 5Mbps recommended)
+2. Close unnecessary browser tabs
+3. Clear browser cache and cookies
+4. Disable resource-heavy browser extensions
+5. Try different browser
+6. Check if issue is device-specific
+
+### Page Freezing
+
+**Problem**: Pages freeze or become unresponsive
+
+**Solutions**:
+1. Refresh the page
+2. Close and reopen browser
+3. Clear browser cache
+4. Check available device memory
+5. Update browser to latest version
+6. Report to support with browser console logs
+
+## Department & Access Issues
+
+### Cannot See Department Cases
+
+**Problem**: Cases from department not visible
+
+**Solutions**:
+1. Verify you're assigned to the correct department
+2. Check department assignment in your profile
+3. Ensure cases are assigned to your department
+4. Check if cases are shared with your department
+5. Contact department head or Super-Admin
+
+### Wrong Department Assignment
+
+**Problem**: Assigned to incorrect department
+
+**Solutions**:
+1. Contact workspace Super-Admin
+2. Request department change in Users, Roles, Rates
+3. Verify change takes effect on next login
+4. Check case access after department change
+
+## Integration Issues
+
+### Integration Not Working
+
+**Problem**: Third-party integration fails
+
+**Solutions**:
+1. Verify integration is enabled in workspace settings
+2. Check API keys are correct
+3. Test connection in integration settings
+4. Review error logs
+5. Verify integration service is operational
+6. Reconfigure integration from scratch
+7. Contact integration provider support
+
+## Getting Additional Help
+
+If these solutions don't resolve your issue:
+
+<CardGroup cols={2}>
+  <Card title="Contact Support" icon="headset" href="/support/contact">
+    Email support@clerra.com for personalized assistance
+  </Card>
+  <Card title="Check FAQ" icon="circle-question" href="/support/faq">
+    Review frequently asked questions
+  </Card>
+</CardGroup>
+
+**When Contacting Support, Include:**
+- Detailed description of the issue
+- Steps to reproduce the problem
+- Screenshots or screen recordings
+- Browser and device information
+- Error messages (exact text)
+- Your workspace name and user email
