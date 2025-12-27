@@ -1,0 +1,341 @@
+---
+title: 'Inviting Team Members'
+description: 'How to invite and onboard team members to your Clerra workspace'
+icon: 'user-plus'
+---
+
+## Overview
+
+Invite team members, assign roles, and add them to departments to collaborate effectively in your Clerra workspace.
+
+<Info>
+  Team members must be invited by existing workspace members with appropriate permissions (typically Super-Admins or users with "invite_users" permission).
+</Info>
+
+## Inviting Single Users
+
+<Steps>
+  <Step title="Navigate to Users Section">
+    Go to **Users, Roles, Rates** in the sidebar
+  </Step>
+
+  <Step title="Click Invite Member">
+    Click the **Invite Member** or **Add New** button
+  </Step>
+
+  <Step title="Enter User Details">
+    **Required Information:**
+    - **Email Address**: User's work email
+    - **Role**: Select from available roles (Super-Admin, Attorney, Paralegal, Member, Client, or custom roles)
+    - **Department**: Assign to a department (required - every user must be assigned to a department)
+
+    **Optional Information:**
+    - **Personal Message**: Add a welcoming note to the invitation email
+    - **Billing Rate**: Set user-specific billing rate (overrides role default)
+  </Step>
+
+  <Step title="Send Invitation">
+    Click **Send Invitation** to email the invite to the user
+  </Step>
+</Steps>
+
+<Note>
+  Department assignment is **required** when inviting users. Users are automatically logged into their assigned department and can only access cases/data within that department (unless they have cross-department permissions).
+</Note>
+
+## Bulk Invitations
+
+For inviting multiple team members at once:
+
+<Steps>
+  <Step title="Prepare CSV File">
+    Create a CSV file with the following columns:
+    - `email` (required)
+    - `role` (required)
+    - `department` (required)
+    - `billing_rate` (optional)
+    - `message` (optional)
+  </Step>
+
+  <Step title="Navigate to Bulk Upload">
+    Go to **Users, Roles, Rates** > **Bulk Invite**
+  </Step>
+
+  <Step title="Upload CSV">
+    Select and upload your prepared CSV file
+  </Step>
+
+  <Step title="Review Invitations">
+    Preview the invitation list and verify all details are correct
+  </Step>
+
+  <Step title="Send Invitations">
+    Click **Send All Invitations** to email all users
+  </Step>
+</Steps>
+
+<Tip>
+  Download the CSV template from Clerra to ensure your file format is correct.
+</Tip>
+
+## Invitation Process for Recipients
+
+When a user receives an invitation email:
+
+<Steps>
+  <Step title="Receive Invitation Email">
+    User receives an email invitation to join the workspace
+  </Step>
+
+  <Step title="Click Invitation Link">
+    User clicks the link in the email, which takes them to the setup page
+  </Step>
+
+  <Step title="Complete Profile Setup">
+    User must provide:
+    - **Full Name**
+    - **Password** (create account credentials)
+    - **Profile Picture** (optional)
+  </Step>
+
+  <Step title="Access Workspace">
+    After setup, user can log in and access the workspace
+  </Step>
+</Steps>
+
+<Warning>
+  Invitation links expire after 7 days. If a link expires, resend the invitation from the Users section.
+</Warning>
+
+## Managing Invitations
+
+### View Pending Invitations
+
+<Steps>
+  <Step title="Navigate to Users">
+    Go to **Users, Roles, Rates**
+  </Step>
+
+  <Step title="Filter by Status">
+    Select **Invited** from the status filter to see pending invitations
+  </Step>
+
+  <Step title="View Details">
+    Click on an invitation to see:
+    - Email address
+    - Invited date
+    - Assigned role and department
+    - Invitation status (Sent, Pending, Expired)
+  </Step>
+</Steps>
+
+### Resend Invitations
+
+If a user didn't receive the invitation email or the link expired:
+
+1. Go to **Users, Roles, Rates**
+2. Find the pending invitation
+3. Click **Resend Invitation**
+4. A new email with a fresh link will be sent
+
+### Revoke Invitations
+
+To cancel a pending invitation:
+
+1. Go to **Users, Roles, Rates**
+2. Find the pending invitation
+3. Click **Revoke Invitation**
+4. The invitation link will be invalidated
+
+<Note>
+  Revoking an invitation prevents the user from accepting it, but you can re-invite them later if needed.
+</Note>
+
+## User Status Types
+
+<CardGroup cols={2}>
+  <Card title="Active" icon="circle-check">
+    User has accepted invitation and has active access to the workspace
+  </Card>
+  <Card title="Invited" icon="envelope">
+    Invitation sent but not yet accepted by the user
+  </Card>
+  <Card title="Deactivated" icon="circle-xmark">
+    User access suspended but data preserved
+  </Card>
+  <Card title="Removed" icon="trash">
+    User completely removed from workspace
+  </Card>
+</CardGroup>
+
+## Role Assignment During Invitation
+
+When inviting users, you assign them one of the following roles:
+
+### Workspace Roles
+- **Super-Admin**: Full workspace control
+- **Attorney**: Legal professional with case management
+- **Paralegal**: Legal support staff
+- **Member**: Basic team member
+- **Client**: External client (read-only)
+- **Custom Roles**: Any custom roles you've created
+
+<Tip>
+  See the [Roles & Permissions](/users/roles-and-permissions) guide for detailed information about each role's capabilities.
+</Tip>
+
+## Department Assignment
+
+<Warning>
+  **Department assignment is required** when inviting users. Users cannot be invited without being assigned to a department.
+</Warning>
+
+### Why Departments Matter
+
+- **Automatic Access Control**: Users are automatically logged into their department
+- **Data Isolation**: Users see cases and data relevant to their department
+- **Workload Organization**: Organize teams by practice area, office location, or function
+
+### How to Assign Departments
+
+During the invitation process:
+1. Select the appropriate department from the dropdown
+2. If the department doesn't exist yet, create it first in Settings
+3. Assign the user as a regular member or department head
+
+<Info>
+  Learn more about creating and managing departments in the [Departments](/users/departments) guide.
+</Info>
+
+## Updating User Roles After Invitation
+
+If you need to change a user's role after they've joined:
+
+<Steps>
+  <Step title="Navigate to Users">
+    Go to **Users, Roles, Rates**
+  </Step>
+
+  <Step title="Select User">
+    Click on the user you want to update
+  </Step>
+
+  <Step title="Edit Role">
+    Click **Edit** and change:
+    - Role assignment
+    - Department assignment
+    - Billing rate
+    - Permissions (if needed)
+  </Step>
+
+  <Step title="Save Changes">
+    Click **Save** - changes take effect immediately
+  </Step>
+</Steps>
+
+## Removing Users
+
+### Deactivating Users
+
+Temporarily suspend access while preserving all data:
+
+1. Go to **Users, Roles, Rates**
+2. Select the user
+3. Click **Deactivate User**
+4. User loses access but all their work/history is preserved
+
+### Removing Users Permanently
+
+Completely remove a user from the workspace:
+
+<Warning>
+  This action cannot be undone. The user's account association with the workspace will be permanently removed.
+</Warning>
+
+1. Go to **Users, Roles, Rates**
+2. Select the user
+3. Click **Remove from Workspace**
+4. Confirm the action
+5. User is permanently removed (but their historical data may be preserved for compliance)
+
+## Best Practices
+
+<Check>
+  **Assign Appropriate Roles**: Choose roles that match the user's responsibilities
+</Check>
+
+<Check>
+  **Set Billing Rates on Invitation**: Configure billing rates when inviting to ensure accurate time tracking
+</Check>
+
+<Check>
+  **Use Departments**: Always assign users to appropriate departments for better organization
+</Check>
+
+<Check>
+  **Send Welcome Messages**: Include a personal message with context about their role and responsibilities
+</Check>
+
+<Check>
+  **Monitor Pending Invitations**: Regularly check for expired invitations and resend as needed
+</Check>
+
+<Check>
+  **Onboard Properly**: Have an onboarding checklist for new users (training, documentation, etc.)
+</Check>
+
+## Workspace Capacity
+
+Your workspace has a user limit based on your subscription plan:
+
+- **Pro Plan**: Up to a specific number of users per workspace
+- **Teams Plan**: Higher user limits
+- **Enterprise Plan**: Custom user limits
+
+<Info>
+  Check your current user count and plan limits in **Settings > Subscription** (for Super-Admins).
+</Info>
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="User didn't receive invitation email">
+    - Check spam/junk folders
+    - Verify email address is correct
+    - Resend the invitation
+    - Check with IT about email filtering
+  </Accordion>
+
+  <Accordion title="Invitation link expired">
+    - Invitation links are valid for 7 days
+    - Resend a new invitation from Users section
+    - User will receive a new link
+  </Accordion>
+
+  <Accordion title="Cannot add more users">
+    - Check your workspace user limit
+    - Upgrade your plan if needed
+    - Remove inactive users to free up seats
+  </Accordion>
+
+  <Accordion title="User can't see cases/documents">
+    - Verify their department assignment
+    - Check their role permissions
+    - Ensure they're assigned to relevant cases
+    - Verify workspace access is active
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Roles & Permissions" icon="shield" href="/users/roles-and-permissions">
+    Learn about different roles and permissions
+  </Card>
+  <Card title="Manage Departments" icon="sitemap" href="/users/departments">
+    Create and organize departments
+  </Card>
+  <Card title="User Activity" icon="chart-line" href="/workspace/settings">
+    Monitor user activity and performance
+  </Card>
+</CardGroup>

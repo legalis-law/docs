@@ -1,0 +1,328 @@
+---
+title: 'Roles & Permissions'
+description: 'Understanding user roles and permission system in Clerra'
+icon: 'user-shield'
+---
+
+## Overview
+
+Clerra uses a comprehensive role-based access control (RBAC) system to manage user permissions. The system distinguishes between **workspace-level roles** (for law firm users) and **system-level roles** (for platform administration).
+
+<Note>
+  **Admin** role is reserved for oversight/platform administrators. Law firms use **Super-Admin** for workspace management.
+</Note>
+
+## Workspace-Level Roles
+
+These roles are available for law firm users within their workspace.
+
+### Super-Admin
+
+**Full workspace control and management**
+
+Super-Admins have nearly all permissions within the workspace. They can manage users, cases, documents, settings, and integrations.
+
+<AccordionGroup>
+  <Accordion title="Case Management Permissions" icon="briefcase">
+    - View, create, edit, and delete cases
+    - Assign and close cases
+    - Manage case notes, documents, tasks, calendar
+    - Approve case changes
+    - View case analytics and billing
+  </Accordion>
+
+  <Accordion title="User Management Permissions" icon="users">
+    - View, create, edit, and delete users
+    - Invite and remove users
+    - Manage user roles and permissions
+    - View user activity and performance
+    - Export/import user data
+  </Accordion>
+
+  <Accordion title="Document Management Permissions" icon="file">
+    - Full document access and management
+    - Upload, download, share, and archive
+    - Manage versions and approvals
+    - Control document permissions
+  </Accordion>
+
+  <Accordion title="Billing Management Permissions" icon="dollar-sign">
+    - View all billing (not limited to own cases)
+    - Create, edit, and delete invoices
+    - Approve/reject invoices and expenses
+    - Manage billing rates and schedules
+    - **Note**: Cannot setup case billing by default (only case managers)
+  </Accordion>
+
+  <Accordion title="System Permissions" icon="gear">
+    - Manage workspaces and roles
+    - View system logs and audit logs
+    - Manage integrations and API keys
+    - Configure notifications and templates
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  Super-Admins can be partners or workspace administrators. This role provides full operational control within the workspace.
+</Tip>
+
+### Attorney
+
+**Legal professional with case management capabilities**
+
+Attorneys have full case management permissions and can setup billing for cases they manage (as case manager/originating attorney).
+
+**Key Permissions:**
+- **Cases**: View, create, edit, assign cases
+- **Clients**: View, create, edit client records
+- **Documents**: View, create, edit documents
+- **Billing**: Setup case billing (when case manager), create invoices
+- **Time Tracking**: View, create, edit timesheets (including team timesheets)
+- **Calendar**: View, create, edit events
+- **Court Reports**: Full access
+- **Tasks & Comments**: Full access
+- **Playbooks**: View, create, edit, run playbooks
+
+<Warning>
+  Attorneys can only setup billing for cases where they are the case manager (originating attorney). General billing requires super-admin privileges.
+</Warning>
+
+### Paralegal
+
+**Legal support staff with document and case permissions**
+
+Paralegals support attorneys with case work, document management, and administrative tasks.
+
+**Key Permissions:**
+- **Cases**: View, create, edit cases
+- **Clients**: View, create, edit client records
+- **Documents**: View, create, edit documents
+- **Billing**: Read-only access (view billing and payment history)
+- **Time Tracking**: View, create, edit timesheets
+- **Calendar**: View, create, edit events
+- **Court Reports**: Full access
+- **Tasks & Comments**: Full access
+- **Playbooks**: View, create, edit, run playbooks
+
+### Member
+
+**Basic team member with standard access**
+
+Members have basic access to view and create records but limited administrative capabilities.
+
+**Key Permissions:**
+- **Cases**: View, create, edit cases
+- **Clients**: View, create clients
+- **Documents**: View, create, edit documents
+- **Billing**: Read-only access
+- **Time Tracking**: View, create, edit timesheets
+- **Calendar**: View, create events
+- **Tasks & Comments**: Full access
+- **Playbooks**: View and run playbooks (cannot create/edit)
+
+### Client
+
+**External client user with read-only access**
+
+Clients can view information related to their own cases only.
+
+**Key Permissions:**
+- **Cases**: View their own cases
+- **Documents**: View documents for their cases
+- **Billing**: View billing and payment history for their cases
+- **Calendar**: View events for their cases
+- **Timesheets**: View timesheets for their cases
+- **Client Details**: View their own client profile and history
+
+<Info>
+  Clients have no access to playbooks or administrative features. Their access is automatically restricted to only the cases they're associated with.
+</Info>
+
+## System-Level Roles
+
+These roles are for platform/oversight administration and are NOT available to workspace users.
+
+<Warning>
+  The following roles are for **oversight administration only** and should not be assigned to workspace users.
+</Warning>
+
+### Admin (System-Level)
+
+Platform administrators who manage the overall Clerra system, workspaces, and security.
+
+**Responsibilities:**
+- System management and monitoring
+- Workspace monitoring and compliance
+- Security and audit log management
+- API and integration management
+- System-wide analytics
+
+### Manager (System-Level)
+
+System-level management with approval capabilities across workspaces.
+
+**Responsibilities:**
+- View system logs and health
+- Monitor all workspaces
+- Approve invoices and timesheets across workspaces
+- View system-wide analytics
+
+### Third-Party Admin (System-Level)
+
+External administrators with read-only access across workspaces.
+
+**Responsibilities:**
+- Read-only access to cases, documents, clients
+- View timesheets and calendar
+- No playbook or administrative access
+
+## Custom Roles
+
+You can create custom roles with specific permission combinations tailored to your organization's needs.
+
+### Creating a Custom Role
+
+<Steps>
+  <Step title="Navigate to Roles">
+    Go to **Users, Roles, Rates** in the sidebar
+  </Step>
+
+  <Step title="Add New Role">
+    Click **Add New** > **Role**
+  </Step>
+
+  <Step title="Enter Role Details">
+    - **Name**: Role name (required) - e.g., "Senior Associate"
+    - **Role Title**: Optional display title
+    - **Description**: Brief description of the role
+    - **Billing Rate**: Default billing rate for users with this role (in GHS)
+  </Step>
+
+  <Step title="Assign Permissions">
+    Select specific permissions from the comprehensive list organized by category:
+    - Case Management
+    - User Management
+    - Document Management
+    - Billing Management
+    - Analytics & Reporting
+    - Calendar & Timesheets
+    - And more...
+  </Step>
+
+  <Step title="Save Role">
+    Click **Save** to create the custom role
+  </Step>
+</Steps>
+
+### Available Permission Categories
+
+<CardGroup cols={2}>
+  <Card title="Case Management" icon="briefcase">
+    20+ permissions for case operations, workflow, and analytics
+  </Card>
+  <Card title="User Management" icon="users">
+    20+ permissions for user administration and access control
+  </Card>
+  <Card title="Document Management" icon="file">
+    20+ permissions for document operations and vault management
+  </Card>
+  <Card title="Billing & Invoicing" icon="dollar-sign">
+    23+ permissions for billing, invoicing, and payment management
+  </Card>
+  <Card title="Client Management" icon="user-tie">
+    15+ permissions for client records and relationships
+  </Card>
+  <Card title="Calendar & Events" icon="calendar">
+    10+ permissions for calendar and event management
+  </Card>
+  <Card title="Time Tracking" icon="clock">
+    11+ permissions for timesheet and tracking operations
+  </Card>
+  <Card title="Analytics & Reports" icon="chart-line">
+    15+ permissions for viewing and generating reports
+  </Card>
+  <Card title="Approvals" icon="check-circle">
+    19+ permissions for approval workflows
+  </Card>
+  <Card title="Court Reports" icon="gavel">
+    4 permissions for court report management
+  </Card>
+  <Card title="Tasks & Comments" icon="list-check">
+    8 permissions for task and comment management
+  </Card>
+  <Card title="System Administration" icon="gear">
+    20+ permissions for system-level configuration
+  </Card>
+</CardGroup>
+
+<Tip>
+  Custom roles allow you to create positions like "Junior Associate," "Legal Secretary," or "Of Counsel" with precisely the permissions they need.
+</Tip>
+
+## Assigning Roles to Users
+
+Roles are assigned when:
+
+1. **Inviting new users** - Select the role during the invitation process
+2. **Updating existing users** - Navigate to **Users, Roles, Rates** > Click user > Edit role
+3. **During workspace creation** - The creator is automatically assigned Super-Admin
+
+<Note>
+  Users can only have one primary role, but permissions can be fine-tuned on a per-user basis if needed.
+</Note>
+
+## Permission Inheritance
+
+<Steps>
+  <Step title="Role Permissions">
+    Base permissions are inherited from the assigned role
+  </Step>
+
+  <Step title="Case-Specific Access">
+    Additional access granted when assigned to specific cases
+  </Step>
+
+  <Step title="Department Access">
+    Department-based access control (users see cases in their department)
+  </Step>
+
+  <Step title="Direct Permissions">
+    Individual permissions can be added/removed on a per-user basis
+  </Step>
+</Steps>
+
+## Best Practices
+
+<Check>
+  **Use Standard Roles When Possible**: Standard roles (Attorney, Paralegal, etc.) cover most use cases
+</Check>
+
+<Check>
+  **Create Custom Roles for Specific Positions**: Define custom roles for unique positions in your firm
+</Check>
+
+<Check>
+  **Regular Permission Audits**: Review user permissions quarterly to ensure appropriate access
+</Check>
+
+<Check>
+  **Principle of Least Privilege**: Grant only the permissions necessary for the role's responsibilities
+</Check>
+
+<Check>
+  **Document Custom Roles**: Maintain documentation for custom roles and their intended use
+</Check>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Invite Team Members" icon="envelope" href="/users/inviting-team-members">
+    Learn how to invite users and assign roles
+  </Card>
+  <Card title="Manage Departments" icon="sitemap" href="/users/departments">
+    Organize users into departments
+  </Card>
+  <Card title="Workspace Settings" icon="cog" href="/workspace/settings">
+    Configure workspace permissions
+  </Card>
+</CardGroup>

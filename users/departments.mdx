@@ -1,0 +1,394 @@
+---
+title: 'Departments'
+description: 'Organize your workspace with departments for better collaboration and access control'
+icon: 'sitemap'
+---
+
+## Overview
+
+Departments help you organize your Clerra workspace by practice areas, teams, office locations, or any other grouping that makes sense for your firm. Every user must be assigned to a department.
+
+<Info>
+  **Key Feature**: Users are automatically logged into their assigned department, and department assignment happens at the backend. Cases and matters are automatically associated with the user's department.
+</Info>
+
+## Why Use Departments?
+
+<CardGroup cols={2}>
+  <Card title="Access Control" icon="lock">
+    Control which users can access specific cases and data based on department
+  </Card>
+  <Card title="Workload Organization" icon="list-check">
+    Organize cases, matters, and tasks by practice area or team
+  </Card>
+  <Card title="Reporting & Analytics" icon="chart-bar">
+    Generate department-specific reports and performance metrics
+  </Card>
+  <Card title="Resource Management" icon="users">
+    Manage attorney assignments and capacity by department
+  </Card>
+</CardGroup>
+
+## Creating a Department
+
+<Steps>
+  <Step title="Open Settings Modal">
+    Click the **workspace name** at the top-right corner of the screen to open the Settings modal
+  </Step>
+
+  <Step title="Navigate to Departments Tab">
+    Click on the **Departments** tab in the Settings modal
+  </Step>
+
+  <Step title="Click Create Department">
+    Click the **Create Department** button
+  </Step>
+
+  <Step title="Enter Department Details">
+    **Required Information:**
+    - **Department Name**: e.g., "Corporate Law", "Litigation", "Real Estate"
+    - **Description**: Brief description of the department's focus
+
+    **Optional Information:**
+    - **Department Code**: Short code for the department (e.g., "CORP", "LIT")
+  </Step>
+
+  <Step title="Save Department">
+    Click **Save** to create the department
+  </Step>
+
+  <Step title="Assign Department Head & Members">
+    After creation, you can:
+    - Assign a **Department Head** to manage the department
+    - Add **Members** to the department
+  </Step>
+</Steps>
+
+<Note>
+  Only Super-Admins and users with appropriate permissions can create and manage departments.
+</Note>
+
+## Department Structure
+
+### Department Head
+
+The Department Head has special responsibilities and permissions:
+
+**Responsibilities:**
+- Oversee department operations
+- Manage department team members
+- Review department cases and matters
+- Approve department-specific requests
+- Monitor department performance
+
+**Additional Permissions:**
+- View all department cases
+- Assign cases within the department
+- Manage department member access
+- Approve time entries and invoices for department
+
+<Tip>
+  Department Heads typically have the "Manager" or "Super-Admin" role with department-specific oversight.
+</Tip>
+
+### Department Members
+
+All users in the workspace must be assigned to a department:
+
+- **Attorneys**: Assigned to one or more practice area departments
+- **Paralegals**: Assigned to departments they support
+- **Administrative Staff**: Assigned to relevant departments
+- **Clients**: Can be associated with department-specific matters
+
+## Assigning Users to Departments
+
+### During User Invitation
+
+When inviting a new user:
+
+1. Go to **Users, Roles, Rates** > **Invite Member**
+2. Fill in user details (email, role)
+3. **Select Department** (required field)
+4. Choose whether they should be a regular member or department head
+5. Send invitation
+
+<Warning>
+  Department selection is **required** when inviting users. You cannot skip this step.
+</Warning>
+
+### For Existing Users
+
+To change a user's department assignment:
+
+<Steps>
+  <Step title="Navigate to Users">
+    Go to **Users, Roles, Rates**
+  </Step>
+
+  <Step title="Select User">
+    Click on the user whose department you want to change
+  </Step>
+
+  <Step title="Edit Department">
+    Click **Edit** and change the department assignment
+  </Step>
+
+  <Step title="Save Changes">
+    Click **Save** - the user's department access updates immediately
+  </Step>
+</Steps>
+
+## Department Access Control
+
+### Automatic Department Login
+
+<Info>
+  When users log in to Clerra, they are **automatically logged into their assigned department**. This happens at the backend - users don't manually select their department.
+</Info>
+
+### Department-Based Data Access
+
+**What Department Assignment Controls:**
+
+<AccordionGroup>
+  <Accordion title="Case & Matter Access" icon="briefcase">
+    - Users see cases/matters associated with their department
+    - Cross-department cases can be shared if needed
+    - Department Heads can see all department cases
+  </Accordion>
+
+  <Accordion title="Document Access" icon="file">
+    - Documents associated with department cases are accessible
+    - Department-specific vault folders
+    - Shared documents across departments (when permitted)
+  </Accordion>
+
+  <Accordion title="Client Access" icon="user-tie">
+    - View clients associated with department matters
+    - Client intake forms route to appropriate departments
+    - Client portal access managed per department
+  </Accordion>
+
+  <Accordion title="Billing & Time Tracking" icon="clock">
+    - Time entries automatically tagged with department
+    - Department-specific billing rates
+    - Department performance and revenue reports
+  </Accordion>
+</AccordionGroup>
+
+### Cross-Department Collaboration
+
+Users can collaborate across departments when:
+
+- Cases are explicitly shared across departments
+- Users have Super-Admin role with cross-department permissions
+- Department Heads coordinate on multi-department matters
+
+## Department Examples
+
+<CodeGroup>
+
+```text Corporate Law Department
+**Name**: Corporate Law
+**Description**: Handles mergers & acquisitions, corporate governance, and securities
+**Department Head**: Senior Partner - Corporate
+**Members**:
+- 3 Partners
+- 5 Associates
+- 2 Paralegals
+**Focus Areas**: M&A, Corporate Compliance, Securities, Contracts
+```
+
+```text Litigation Department
+**Name**: Civil Litigation
+**Description**: Manages all civil litigation and dispute resolution matters
+**Department Head**: Litigation Partner
+**Members**:
+- 2 Partners
+- 4 Associates
+- 3 Paralegals
+**Focus Areas**: Commercial Disputes, Employment Law, Personal Injury
+```
+
+```text Real Estate Department
+**Name**: Real Estate & Property
+**Description**: Property transactions, leasing, and real estate development
+**Department Head**: Real Estate Partner
+**Members**:
+- 2 Partners
+- 3 Associates
+- 1 Paralegal
+**Focus Areas**: Conveyancing, Property Development, Leasing
+```
+
+</CodeGroup>
+
+## Managing Department Settings
+
+### Editing Department Details
+
+<Steps>
+  <Step title="Open Settings Modal">
+    Click workspace name > **Departments** tab
+  </Step>
+
+  <Step title="Select Department">
+    Click on the department you want to edit
+  </Step>
+
+  <Step title="Update Information">
+    Modify:
+    - Department name
+    - Description
+    - Department head assignment
+  </Step>
+
+  <Step title="Save Changes">
+    Click **Save** to update the department
+  </Step>
+</Steps>
+
+### Adding/Removing Members
+
+**To Add Members:**
+1. Open department settings
+2. Click **Add Members**
+3. Select users from the list
+4. Click **Add to Department**
+
+**To Remove Members:**
+1. Open department settings
+2. View member list
+3. Click **Remove** next to a user
+4. Confirm removal
+
+<Note>
+  Removing a user from a department requires reassigning them to another department - users cannot exist without a department assignment.
+</Note>
+
+### Changing Department Heads
+
+1. Open department settings
+2. Click **Change Department Head**
+3. Select new department head from department members
+4. Previous head becomes regular member (unless removed)
+5. Save changes
+
+## Department Analytics
+
+Department-level analytics are available to Department Heads and Super-Admins:
+
+<CardGroup cols={2}>
+  <Card title="Caseload" icon="briefcase">
+    Active cases, matters opened/closed, case distribution
+  </Card>
+  <Card title="Team Performance" icon="users">
+    Utilization rates, billable hours, case completion times
+  </Card>
+  <Card title="Revenue" icon="dollar-sign">
+    Department revenue, billing efficiency, collection rates
+  </Card>
+  <Card title="Workload Distribution" icon="chart-pie">
+    Case assignments by attorney, matter type distribution
+  </Card>
+</CardGroup>
+
+<Tip>
+  Use department analytics to identify bottlenecks, balance workloads, and optimize resource allocation.
+</Tip>
+
+## Best Practices
+
+<Check>
+  **Align with Practice Areas**: Create departments that match your firm's practice areas
+</Check>
+
+<Check>
+  **Assign Clear Leaders**: Designate department heads who actively manage their teams
+</Check>
+
+<Check>
+  **Regular Reviews**: Review department membership and assignments quarterly
+</Check>
+
+<Check>
+  **Balanced Workload**: Monitor case distribution to prevent overload
+</Check>
+
+<Check>
+  **Cross-Training**: Consider secondary department assignments for backup coverage
+</Check>
+
+<Check>
+  **Clear Naming**: Use descriptive department names that everyone understands
+</Check>
+
+## Common Department Structures
+
+### By Practice Area
+- Corporate & Commercial
+- Litigation & Dispute Resolution
+- Real Estate & Property
+- Family Law
+- Criminal Defense
+- Intellectual Property
+
+### By Office Location
+- Accra Office
+- Kumasi Office
+- Tamale Office
+
+### By Function
+- Client Services
+- Legal Research & Drafting
+- Court & Litigation Support
+- Administrative Support
+
+### Hybrid Approach
+- Accra - Corporate Law
+- Accra - Litigation
+- Kumasi - General Practice
+- Client Intake & Onboarding
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="User can't see cases after department assignment">
+    - Verify cases are associated with the user's department
+    - Check if cases need to be explicitly shared
+    - Confirm user's role permissions allow case viewing
+  </Accordion>
+
+  <Accordion title="Cannot create department">
+    - Verify you have Super-Admin or appropriate permissions
+    - Check if department name is unique
+    - Ensure all required fields are completed
+  </Accordion>
+
+  <Accordion title="User assigned to wrong department">
+    - Go to Users, Roles, Rates
+    - Edit user's department assignment
+    - Reassign to correct department
+    - Changes take effect on next login
+  </Accordion>
+
+  <Accordion title="Department head can't access all department cases">
+    - Verify they have the Manager role or appropriate permissions
+    - Check department head assignment in department settings
+    - Ensure they have "view_all_department_cases" permission
+  </Accordion>
+</AccordionGroup>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Invite Team Members" icon="user-plus" href="/users/inviting-team-members">
+    Invite users and assign to departments
+  </Card>
+  <Card title="Roles & Permissions" icon="shield" href="/users/roles-and-permissions">
+    Configure role-based access control
+  </Card>
+  <Card title="Case Management" icon="briefcase" href="/cases/creating-cases">
+    Learn how cases are assigned to departments
+  </Card>
+</CardGroup>
